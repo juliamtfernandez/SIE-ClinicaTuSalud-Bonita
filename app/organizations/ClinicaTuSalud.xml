@@ -2,14 +2,90 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
   <customUserInfoDefinitions/>
   <users>
-    <user userName="usuario.prueba">
+    <user userName="juan.gonzalez">
+      <firstName>Juan</firstName>
+      <lastName>Gonz&#xe1;lez</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
   </users>
-  <roles/>
-  <groups/>
-  <memberships/>
+  <roles>
+    <role name="Director">
+      <displayName>Director</displayName>
+    </role>
+    <role name="Enfermero">
+      <displayName>Enfermero</displayName>
+    </role>
+    <role name="Medico Especialista">
+      <displayName>Medico Especialista</displayName>
+    </role>
+    <role name="Fisioterapeuta">
+      <displayName>Fisioterapeuta</displayName>
+    </role>
+    <role name="Psic&#xf3;logo">
+      <displayName>Psic&#xf3;logo</displayName>
+    </role>
+    <role name="T&#xe9;cnico Sanitario">
+      <displayName>T&#xe9;cnico Sanitario</displayName>
+    </role>
+    <role name="Administrativo">
+      <displayName>Administrativo</displayName>
+    </role>
+    <role name="Paciente">
+      <displayName>Paciente</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Direcci&#xf3;n">
+      <displayName>Direcci&#xf3;n</displayName>
+    </group>
+    <group name="Administraci&#xf3;n">
+      <displayName>Administraci&#xf3;n</displayName>
+    </group>
+    <group name="&#xc1;rea Cl&#xed;nica">
+      <displayName>&#xc1;rea Cl&#xed;nica</displayName>
+    </group>
+    <group name="Traumatolog&#xed;a" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Traumatolog&#xed;a</displayName>
+    </group>
+    <group name="Ginecolog&#xed;a" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Ginecolog&#xed;a</displayName>
+    </group>
+    <group name="Medicina General" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Medicina General</displayName>
+    </group>
+    <group name="Dermatolog&#xed;a" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Dermatolog&#xed;a</displayName>
+    </group>
+    <group name="Digestivo" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Digestivo</displayName>
+    </group>
+    <group name="Cardiolog&#xed;a" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Cardiolog&#xed;a</displayName>
+    </group>
+    <group name="Oftalmolog&#xed;a" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Oftalmolog&#xed;a</displayName>
+    </group>
+    <group name="Rehabilitaci&#xf3;n" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Rehabilitaci&#xf3;n</displayName>
+    </group>
+    <group name="Salud Mental" parentPath="/&#xc1;rea Cl&#xed;nica">
+      <displayName>Salud Mental</displayName>
+    </group>
+    <group name="Servicios Diagn&#xf3;sticos">
+      <displayName>Servicios Diagn&#xf3;sticos</displayName>
+    </group>
+    <group name="Pacientes">
+      <displayName>Pacientes</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>juan.gonzalez</userName>
+      <roleName>Director</roleName>
+      <groupName>Direcci&#xf3;n</groupName>
+    </membership>
+  </memberships>
 </organization:Organization>
