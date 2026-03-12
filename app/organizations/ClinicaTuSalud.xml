@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="ASCII"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
-  <customUserInfoDefinitions/>
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>especialidad</name>
+      <description>Especialidad de m&#xe9;dico</description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
   <users>
     <user userName="juan.gonzalez">
       <firstName>Juan</firstName>
@@ -8,7 +13,64 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="laura.perez">
+      <firstName>Laura</firstName>
+      <lastName>P&#xe9;rez</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>traumatologia</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="marcos.blasco">
+      <firstName>Marcos</firstName>
+      <lastName>Blasco</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="jesus.cortes">
+      <firstName>Jes&#xfa;s</firstName>
+      <lastName>Cort&#xe9;s</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>dermatologia</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="maria.alvarez">
+      <firstName>Mar&#xed;a</firstName>
+      <lastName>&#xc1;lvarez</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>traumatologia</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
   </users>
   <roles>
@@ -86,6 +148,29 @@
       <userName>juan.gonzalez</userName>
       <roleName>Director</roleName>
       <groupName>Direcci&#xf3;n</groupName>
+    </membership>
+    <membership>
+      <userName>laura.perez</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Traumatolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marcos.blasco</userName>
+      <roleName>Paciente</roleName>
+      <groupName>Pacientes</groupName>
+    </membership>
+    <membership>
+      <userName>jesus.cortes</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Dermatolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>maria.alvarez</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Traumatolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
