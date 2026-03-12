@@ -49,6 +49,7 @@
     <user userName="jesus.cortes">
       <firstName>Jes&#xfa;s</firstName>
       <lastName>Cort&#xe9;s</lastName>
+      <manager></manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -69,6 +70,19 @@
         <customUserInfoValue>
           <name>especialidad</name>
           <value>traumatologia</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="julian.romero">
+      <firstName>Julian</firstName>
+      <lastName>Romero</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
@@ -171,6 +185,11 @@
       <roleName>Medico Especialista</roleName>
       <groupName>Traumatolog&#xed;a</groupName>
       <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>julian.romero</userName>
+      <roleName>T&#xe9;cnico Sanitario</roleName>
+      <groupName>Servicios Diagn&#xf3;sticos</groupName>
     </membership>
   </memberships>
 </organization:Organization>
