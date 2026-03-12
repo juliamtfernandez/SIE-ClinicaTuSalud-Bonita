@@ -1,10 +1,10 @@
 {
-  "id" : "formValidarCita",
-  "name" : "formValidarCita",
+  "id" : "formConfirmarCita",
+  "name" : "formConfirmarCita",
   "type" : "form",
-  "uuid" : "144ac4e9-ac19-4742-84a5-6f37c7c8a945",
+  "uuid" : "53ca6b0e-3eda-48ea-b3b9-c9f1a943b886",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1773333085652,
+  "lastUpdate" : 1773334459974,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "40c91034-01aa-4158-97f8-73c0d34fe62b",
+        "reference" : "70daef95-2283-4963-9133-922b4130cee1",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d0f9a38b-7b7a-4331-ad0d-452007a93c56",
+              "reference" : "3189dce3-9dbe-4f99-8404-d46252925d7e",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -99,9 +99,21 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
                 }
               },
-              "reference" : "d155bea5-823e-470f-bc4b-be9fc5b4622e",
+              "reference" : "6e87197e-1259-472b-a8d9-0a59e99f1c58",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +129,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "37b08609-4588-4d90-bc0e-539b06c00fa5",
+        "reference" : "9989cdb6-c170-436a-89e9-f82c7f1c7b69",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +138,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "d2575877-41b1-4d47-bbba-9230815a8a2f",
+          "reference" : "7ff762d7-30d0-4f42-b68c-5f79ca6538ac",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -165,7 +177,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "03408dc5-3776-4fd8-bf63-8ce8b46fe348",
+                "reference" : "4e0626ca-220d-4905-a684-5f3d3b896d03",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +209,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "050f27f3-4010-4e8e-9e02-a938afd95127",
+                "reference" : "ecb83b69-b12d-4dcd-910e-c8151f89c5b0",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -242,9 +254,21 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
-                      "reference" : "818acf13-5869-4c3d-ab57-4851671b2241",
+                      "reference" : "a9d87905-8e6a-4af2-804b-b3a76411d7f5",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -293,7 +317,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "4062540f-8d69-4c05-a586-1b25687a837d",
+                      "reference" : "40d4c11d-56b6-410a-9032-c16ac8ca484e",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -342,7 +366,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "9e033923-230d-4581-abe3-1867d51b9ef4",
+                      "reference" : "3b5fc76b-e714-4e03-8d37-9ec337a33934",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -403,7 +427,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "80aaef13-0142-4b2f-8855-0376ad7c6c83",
+                      "reference" : "0bebbde2-efa6-4d37-b007-0a97ec171887",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -419,93 +443,54 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "showNow" : {
+                        "allowHtml" : {
                           "type" : "constant",
                           "value" : true
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "inlineInput" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Fecha Hora Asignada"
-                        },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "timePlaceholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a time (h:mm:ss a)"
                         },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!cita.fechaHoraAsignada"
                         },
-                        "labelPosition" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : ""
                         },
-                        "timeFormat" : {
-                          "type" : "constant",
-                          "value" : "h:mm:ss a"
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Fecha Hora Asignada"
                         },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{cita.fechaHoraAsignada|uiDate}}"
                         },
-                        "nowLabel" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "Now"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "cita.fechaHoraAsignada"
-                        },
-                        "withTimeZone" : {
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
-                      "reference" : "3029459c-27a9-4fad-be56-0102cd2f3e1a",
+                      "reference" : "80b96b45-7b98-4d94-a7b6-cbb7662fd6cb",
                       "hasValidationError" : false,
-                      "id" : "pbDateTimePicker",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -519,11 +504,39 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
+                          "type" : "expression",
+                          "value" : "!cita.medico"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Medico"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{cita.medico}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -531,45 +544,14 @@
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Medico"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "cita.medico"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : 4
                         }
                       },
-                      "reference" : "14419815-268e-4eb1-bd45-a4fc45c6e95e",
+                      "reference" : "a5ada911-f988-4e1a-8c5e-c2324b562900",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -628,10 +610,172 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "cadef5e6-3079-4963-bc37-e862cc32fcfe",
+                      "reference" : "61f7ab8f-ec39-4df0-bcb2-6493f6ecc736",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Estado Cita"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "cita.estadoCita"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "38cabade-8393-4d97-8c68-ce1f1714ef50",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "<label style=\"font-size: 14px; font-weight: bold; color: #333333; margin-bottom: 5px; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\">Estado de la cita</label>"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "aceptacion"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "nombre"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "valor"
+                        },
+                        "selectedValue" : {
+                          "type" : "variable",
+                          "value" : "cita.estadoCita"
+                        }
+                      },
+                      "reference" : "6e9f0798-0325-494a-a23d-870ddc0f7d38",
+                      "hasValidationError" : false,
+                      "id" : "pbRadioButtons"
                     }
                   ]
                 ]
@@ -710,9 +854,30 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "9586e5a9-4781-4e4f-b280-a7772010075d",
+                "reference" : "0bbc37b8-46e9-4c29-a21f-763f3ea82eb3",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -764,7 +929,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2968b7f1-4af9-4025-a0e0-3329de0415ab",
+                "reference" : "7e989e63-2742-4cc7-a437-7a9895456359",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -805,8 +970,6 @@
         "\treturn {",
         "\t\t//map cita variable to expected task contract input",
         "\t\tcitaInput: {",
-        "\t\t\tfechaHoraAsignada: $data.cita.fechaHoraAsignada !== undefined ? $data.cita.fechaHoraAsignada : null,",
-        "\t\t\tmedico: $data.cita.medico !== undefined ? $data.cita.medico : null,",
         "\t\t\testadoCita: $data.cita.estadoCita !== undefined ? $data.cita.estadoCita : null",
         "\t\t}",
         "\t}",
@@ -891,20 +1054,30 @@
         "return horario || \"\";"
       ],
       "exposed" : false
+    },
+    "aceptacion" : {
+      "type" : "json",
+      "value" : [
+        "[",
+        "    {\"nombre\":\"Aceptada\", \"valor\":\"aceptada\"},",
+        "    {\"nombre\":\"Rechazada\", \"valor\":\"rechazada\"}",
+        "]"
+      ],
+      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "ce6e3609-3ef3-45ab-9564-3e670acc4d00",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "1b41bc81-1511-418d-808f-d71cd5b649ed",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "34c3cffc-3481-4e10-bb52-75b2364c00e3",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "858fcbc4-cdea-4edd-bd1b-6f74ec050b89",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
