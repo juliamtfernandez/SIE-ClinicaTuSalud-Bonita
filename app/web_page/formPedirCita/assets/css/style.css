@@ -48,6 +48,15 @@ input[type='url'].ng-invalid.ng-dirty {
     padding-top: 30px;
 }
 
+.etiqueta-estandar {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+}
+
 @media screen and (max-width: 767px) {
     .ngdialog.ngdialog-theme-default .ngdialog-content {
         width: 75%;
