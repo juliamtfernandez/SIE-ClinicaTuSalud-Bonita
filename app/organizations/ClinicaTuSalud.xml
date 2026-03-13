@@ -5,6 +5,10 @@
       <name>especialidad</name>
       <description>Especialidad de m&#xe9;dico</description>
     </customUserInfoDefinition>
+    <customUserInfoDefinition>
+      <name>dni</name>
+      <description>DNI del paciente</description>
+    </customUserInfoDefinition>
   </customUserInfoDefinitions>
   <users>
     <user userName="juan.gonzalez">
@@ -16,6 +20,10 @@
       <customUserInfoValues>
         <customUserInfoValue>
           <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -31,6 +39,10 @@
           <name>especialidad</name>
           <value>traumatologia</value>
         </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
       </customUserInfoValues>
     </user>
     <user userName="marcos.blasco">
@@ -43,6 +55,10 @@
         <customUserInfoValue>
           <name>especialidad</name>
           <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value>12345678X</value>
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
@@ -58,6 +74,10 @@
           <name>especialidad</name>
           <value>dermatologia</value>
         </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
       </customUserInfoValues>
     </user>
     <user userName="maria.alvarez">
@@ -71,6 +91,10 @@
           <name>especialidad</name>
           <value>traumatologia</value>
         </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
       </customUserInfoValues>
     </user>
     <user userName="julian.romero">
@@ -82,6 +106,10 @@
       <customUserInfoValues>
         <customUserInfoValue>
           <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>

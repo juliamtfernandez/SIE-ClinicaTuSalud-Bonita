@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "09bf3942-5039-49bc-9805-5c746c3ab34b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1773332079400,
+  "lastUpdate" : 1773426111026,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -143,7 +143,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nombre Paciente"
+                          "value" : "Nombre del paciente"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -926,6 +926,20 @@
         "    {\"nombre\":\"Oftalmología\",\"valor\":\"oftalmologia\"},",
         "    {\"nombre\":\"Salud Mental\",\"valor\":\"salud_mental\"}",
         "]"
+      ],
+      "exposed" : false
+    },
+    "idUsuarioLogueado" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/{{myData.user_id}}"
+      ],
+      "exposed" : false
+    },
+    "infoPersonalizada" : {
+      "type" : "url",
+      "value" : [
+        "../API/customuserinfo/user?p=0&c=10&f=userId={{idUsuarioLogueado}}"
       ],
       "exposed" : false
     }
