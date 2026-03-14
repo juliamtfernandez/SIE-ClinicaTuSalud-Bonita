@@ -1,10 +1,10 @@
 {
-  "id" : "formConfirmarCita",
-  "name" : "formConfirmarCita",
+  "id" : "formNotifCita",
+  "name" : "formNotifCita",
   "type" : "form",
-  "uuid" : "53ca6b0e-3eda-48ea-b3b9-c9f1a943b886",
+  "uuid" : "ae7785df-bea5-4177-9206-9fdd2dc16499",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1773478936748,
+  "lastUpdate" : 1773478536954,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "70daef95-2283-4963-9133-922b4130cee1",
+        "reference" : "bdfadd5b-a48d-4eec-aae0-427d200f0bc4",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "3189dce3-9dbe-4f99-8404-d46252925d7e",
+              "reference" : "56814900-715d-46f6-971c-267979c40ad6",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -99,21 +99,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "labelPosition" : {
-                  "type" : "constant",
-                  "value" : "top"
-                },
-                "labelWidth" : {
-                  "type" : "constant",
-                  "value" : 4
                 }
               },
-              "reference" : "6e87197e-1259-472b-a8d9-0a59e99f1c58",
+              "reference" : "6ae96b72-4e2c-44a8-a00c-56b305ab3372",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -129,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9989cdb6-c170-436a-89e9-f82c7f1c7b69",
+        "reference" : "ed3f0b85-b696-446e-b812-2621536164b4",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -138,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "7ff762d7-30d0-4f42-b68c-5f79ca6538ac",
+          "reference" : "9bfb1a3c-24a0-4fd0-b227-a9f74440a261",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -177,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "4e0626ca-220d-4905-a684-5f3d3b896d03",
+                "reference" : "0e068e68-88d1-4d0b-9b23-e5bd1ce1c9fb",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -209,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ecb83b69-b12d-4dcd-910e-c8151f89c5b0",
+                "reference" : "73830d0e-7600-4f57-81bc-d83793a8b15d",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -254,21 +242,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
                         }
                       },
-                      "reference" : "a9d87905-8e6a-4af2-804b-b3a76411d7f5",
+                      "reference" : "f0e81e98-3398-4e76-bc05-d0653412fbcc",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -317,7 +293,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "40d4c11d-56b6-410a-9032-c16ac8ca484e",
+                      "reference" : "0b572985-3d54-4b9d-b6fe-69c0fc8f3c18",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -366,7 +342,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "3b5fc76b-e714-4e03-8d37-9ec337a33934",
+                      "reference" : "7a3ac151-29a1-4a6d-a319-a9fcdeb032d0",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -404,7 +380,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{especialidadFormateada}}"
+                          "value" : "{{cita.especialidad}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -413,21 +389,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
                         }
                       },
-                      "reference" : "0bebbde2-efa6-4d37-b007-0a97ec171887",
+                      "reference" : "4f383f46-0cb6-420b-8424-20a3f562ebe6",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -474,21 +438,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
                         }
                       },
-                      "reference" : "80b96b45-7b98-4d94-a7b6-cbb7662fd6cb",
+                      "reference" : "e984fe2a-5dcb-4740-b407-7984e7fbd553",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -535,21 +487,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
                         }
                       },
-                      "reference" : "a5ada911-f988-4e1a-8c5e-c2324b562900",
+                      "reference" : "fda636d5-adbc-4303-be75-7211db530f8e",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -587,7 +527,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{horarioFormateado}}"
+                          "value" : "{{cita.horarioPreferencia}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -596,21 +536,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
                         }
                       },
-                      "reference" : "61f7ab8f-ec39-4df0-bcb2-6493f6ecc736",
+                      "reference" : "09dfeb1e-0c59-43e9-b340-2de86fd5e223",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -632,7 +560,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -648,7 +576,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -700,82 +628,10 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "38cabade-8393-4d97-8c68-ce1f1714ef50",
+                      "reference" : "a9d1bb67-2eba-4c77-b750-858652f3482e",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "<label style=\"font-size: 14px; font-weight: bold; color: #333333; margin-bottom: 5px; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\">Estado de la cita</label>"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "inline" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "aceptacion"
-                        },
-                        "displayedKey" : {
-                          "type" : "constant",
-                          "value" : "nombre"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant",
-                          "value" : "valor"
-                        },
-                        "selectedValue" : {
-                          "type" : "variable",
-                          "value" : "cita.estadoCita"
-                        }
-                      },
-                      "reference" : "6e9f0798-0325-494a-a23d-870ddc0f7d38",
-                      "hasValidationError" : false,
-                      "id" : "pbRadioButtons"
                     }
                   ]
                 ]
@@ -808,7 +664,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Aceptar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -877,7 +733,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "0bbc37b8-46e9-4c29-a21f-763f3ea82eb3",
+                "reference" : "1565a528-e2f2-4ab9-8975-d3ba4ab68dd1",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -929,7 +785,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7e989e63-2742-4cc7-a437-7a9895456359",
+                "reference" : "26b673eb-5438-4fc3-bb54-50798b2919de",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -997,85 +853,18 @@
         "id"
       ],
       "exposed" : false
-    },
-    "especialidades" : {
-      "type" : "json",
-      "value" : [
-        "[",
-        "    {\"nombre\":\"Traumatología\",\"valor\":\"traumatologia\"},",
-        "    {\"nombre\":\"Ginecología\",\"valor\":\"ginecologia\"},",
-        "    {\"nombre\":\"Medicina General\",\"valor\":\"medicina_general\"},",
-        "    {\"nombre\":\"Dermatología\",\"valor\":\"dermatologia\"},",
-        "    {\"nombre\":\"Digestivo\",\"valor\":\"digestivo\"},",
-        "    {\"nombre\":\"Cardiología\",\"valor\":\"cardiologia\"},",
-        "    {\"nombre\":\"Oftalmología\",\"valor\":\"oftalmologia\"},",
-        "    {\"nombre\":\"Salud Mental\",\"valor\":\"salud_mental\"}",
-        "]"
-      ],
-      "exposed" : false
-    },
-    "especialidadFormateada" : {
-      "type" : "expression",
-      "value" : [
-        "if ($data.cita && $data.cita.especialidad && $data.especialidades) {\r",
-        "    // Buscamos en tu lista JSON cuál coincide con el valor guardado\r",
-        "    var coincidencia = $data.especialidades.find(function(item) {\r",
-        "        return item.valor === $data.cita.especialidad;\r",
-        "    });\r",
-        "    \r",
-        "    // Si lo encuentra, devuelve el nombre bonito. Si no, devuelve lo que haya.\r",
-        "    if (coincidencia) {\r",
-        "        return coincidencia.nombre;\r",
-        "    } else {\r",
-        "        return $data.cita.especialidad;\r",
-        "    }\r",
-        "}\r",
-        "return \"\";"
-      ],
-      "exposed" : false
-    },
-    "horarioFormateado" : {
-      "type" : "expression",
-      "value" : [
-        "// Ajusta \"cita.horarioPreferencia\" si tu variable se llama diferente (ej. $data.horario_preferencia)\r",
-        "var horario = $data.cita.horarioPreferencia; \r",
-        "\r",
-        "var traductor = {\r",
-        "    \"manyana\": \"Mañana\",\r",
-        "    \"tarde\": \"Tarde\"\r",
-        "};\r",
-        "\r",
-        "// Si hay un horario guardado y coincide con nuestro diccionario, lo traduce\r",
-        "if (horario && traductor[horario]) {\r",
-        "    return traductor[horario];\r",
-        "}\r",
-        "\r",
-        "// Si está vacío o no coincide, devuelve lo que haya\r",
-        "return horario || \"\";"
-      ],
-      "exposed" : false
-    },
-    "aceptacion" : {
-      "type" : "json",
-      "value" : [
-        "[",
-        "    {\"nombre\":\"Aceptada\", \"valor\":\"aceptada\"},",
-        "    {\"nombre\":\"Rechazada\", \"valor\":\"rechazada\"}",
-        "]"
-      ],
-      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "1b41bc81-1511-418d-808f-d71cd5b649ed",
+      "id" : "236afb82-75d5-4ef4-89a5-34c2bac6f470",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "858fcbc4-cdea-4edd-bd1b-6f74ec050b89",
+      "id" : "87293185-2453-465a-aa29-5801d2e6d359",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,

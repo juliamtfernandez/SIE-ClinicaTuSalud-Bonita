@@ -114,6 +114,23 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="loreto.ferrera">
+      <firstName>Loreto</firstName>
+      <lastName>Ferrera</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="Director">
@@ -218,6 +235,11 @@
       <userName>julian.romero</userName>
       <roleName>T&#xe9;cnico Sanitario</roleName>
       <groupName>Servicios Diagn&#xf3;sticos</groupName>
+    </membership>
+    <membership>
+      <userName>loreto.ferrera</userName>
+      <roleName>Administrativo</roleName>
+      <groupName>Administraci&#xf3;n</groupName>
     </membership>
   </memberships>
 </organization:Organization>
