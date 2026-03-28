@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "09bf3942-5039-49bc-9805-5c746c3ab34b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1773426111026,
+  "lastUpdate" : 1774712471957,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -139,7 +139,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -158,7 +158,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.citaInput.nombrePaciente"
+                          "value" : "nombre_apellido"
                         },
                         "required" : {
                           "type" : "constant",
@@ -229,7 +229,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -248,7 +248,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.citaInput.dniPaciente"
+                          "value" : "dni"
                         },
                         "required" : {
                           "type" : "constant",
@@ -897,8 +897,11 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
+        "var citaInput = $data.formInput.citaInput",
+        "citaInput.nombrePaciente = $data.nombre_apellido",
+        "",
         "return {",
-        "\tcitaInput: $data.formInput.citaInput",
+        "\tcitaInput: citaInput",
         "}"
       ],
       "exposed" : false
@@ -929,17 +932,38 @@
       ],
       "exposed" : false
     },
-    "idUsuarioLogueado" : {
+    "user" : {
       "type" : "url",
       "value" : [
-        "../API/system/session/{{myData.user_id}}"
+        "../API/system/session/1"
       ],
       "exposed" : false
     },
-    "infoPersonalizada" : {
+    "info_personalizada" : {
       "type" : "url",
       "value" : [
-        "../API/customuserinfo/user?p=0&c=10&f=userId={{idUsuarioLogueado}}"
+        "../API/customuserinfo/user?p=0&c=10&f=userId={{user.user_id}}"
+      ],
+      "exposed" : false
+    },
+    "info_profesional" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{user.user_id}}?d=professional_data"
+      ],
+      "exposed" : false
+    },
+    "nombre_apellido" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.info_profesional.firstname + \" \"+ $data.info_profesional.lastname;"
+      ],
+      "exposed" : false
+    },
+    "dni" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.info_personalizada[0].value;"
       ],
       "exposed" : false
     }
