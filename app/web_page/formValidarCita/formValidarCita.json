@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "144ac4e9-ac19-4742-84a5-6f37c7c8a945",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1774712604462,
+  "lastUpdate" : 1775553950157,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -111,6 +111,18 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
                 }
               },
               "reference" : "d155bea5-823e-470f-bc4b-be9fc5b4622e",
@@ -598,7 +610,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -617,7 +629,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "cita.medico"
+                          "value" : "nombre_apellido"
                         },
                         "required" : {
                           "type" : "constant",
@@ -889,7 +901,7 @@
         "\t\t//map cita variable to expected task contract input",
         "\t\tcitaInput: {",
         "\t\t\tfechaHoraAsignada: $data.cita.fechaHoraAsignada !== undefined ? $data.cita.fechaHoraAsignada : null,",
-        "\t\t\tmedico: $data.cita.medico !== undefined ? $data.cita.medico : null,",
+        "\t\t\tmedico: $data.nombre_apellido,",
         "\t\t\testadoCita: $data.cita.estadoCita !== undefined ? $data.cita.estadoCita : null",
         "\t\t}",
         "\t}",
@@ -938,7 +950,7 @@
       "type" : "expression",
       "value" : [
         "if ($data.cita && $data.cita.especialidad && $data.especialidades) {\r",
-        "    // Buscamos en tu lista JSON cuál coincide con el valor guardado\r",
+        "    // Buscamos en la lista JSON cuál coincide con el valor guardado\r",
         "    var coincidencia = $data.especialidades.find(function(item) {\r",
         "        return item.valor === $data.cita.especialidad;\r",
         "    });\r",
@@ -957,7 +969,6 @@
     "horarioFormateado" : {
       "type" : "expression",
       "value" : [
-        "// Ajusta \"cita.horarioPreferencia\" si tu variable se llama diferente (ej. $data.horario_preferencia)\r",
         "var horario = $data.cita.horarioPreferencia; \r",
         "\r",
         "var traductor = {\r",
@@ -972,6 +983,27 @@
         "\r",
         "// Si está vacío o no coincide, devuelve lo que haya\r",
         "return horario || \"\";"
+      ],
+      "exposed" : false
+    },
+    "info_profesional" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{user.user_id}}?d=professional_data"
+      ],
+      "exposed" : false
+    },
+    "nombre_apellido" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.info_profesional.firstname + \" \"+ $data.info_profesional.lastname;"
+      ],
+      "exposed" : false
+    },
+    "user" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/1"
       ],
       "exposed" : false
     }
