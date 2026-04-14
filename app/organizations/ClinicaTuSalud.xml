@@ -131,6 +131,23 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="rocio.martinez">
+      <firstName>Rocio</firstName>
+      <lastName>Mart&#xed;nez</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value>12345678A</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="Director">
@@ -240,6 +257,11 @@
       <userName>loreto.ferrera</userName>
       <roleName>Administrativo</roleName>
       <groupName>Administraci&#xf3;n</groupName>
+    </membership>
+    <membership>
+      <userName>rocio.martinez</userName>
+      <roleName>Paciente</roleName>
+      <groupName>Pacientes</groupName>
     </membership>
   </memberships>
 </organization:Organization>
