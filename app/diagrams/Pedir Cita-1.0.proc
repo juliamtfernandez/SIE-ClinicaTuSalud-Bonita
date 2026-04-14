@@ -113,6 +113,16 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_X45eyh4yEfGURfdQCDIpoA">
             <targetForm xmi:type="expression:Expression" xmi:id="_X45eyx4yEfGURfdQCDIpoA" name="formNotifCita" content="ae7785df-bea5-4177-9206-9fdd2dc16499" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_xliBQDfqEfG2NP5h431sKw" name="medicoAsignado" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_xliBQTfqEfG2NP5h431sKw" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_xliBQjfqEfG2NP5h431sKw" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_xliBQzfqEfG2NP5h431sKw" name="userId()" content="def user = apiAccessor.getIdentityAPI().getUserByUserName(cita.medico)&#xD;&#xA;return user.id;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_oaEsYDfsEfG2NP5h431sKw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_oaEsYTfsEfG2NP5h431sKw" name="cita" dataType="_21fxVB0yEfG24oyYZo8hMw" className="com.company.model.Cita"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_X45eyR4yEfGURfdQCDIpoA">
             <inputs xmi:type="process:ContractInput" xmi:id="_ohsh4B-DEfGrF7fwmM0Hig" name="citaInput" type="COMPLEX" dataReference="cita" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_ohsh4R-DEfGrF7fwmM0Hig" name="estadoCita" createMode="false"/>
@@ -163,8 +173,8 @@
           <referencedElements xmi:type="process:ContractInput" xmi:id="_AbgBCh4CEfGEktRq6S-Viw" name="citaInput" type="COMPLEX"/>
         </defaultValue>
       </data>
-      <data xmi:type="process:Data" xmi:id="_Dr-tcDfkEfG2NP5h431sKw" name="medicoTomadorCita" dataType="_21fxUR0yEfG24oyYZo8hMw">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_Dr-tcTfkEfG2NP5h431sKw" content=""/>
+      <data xmi:type="process:Data" xmi:id="_mLm7oDfqEfG2NP5h431sKw" name="medicoUsername" dataType="_21fxUR0yEfG24oyYZo8hMw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_mLm7oTfqEfG2NP5h431sKw" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_21fxNB0yEfG24oyYZo8hMw">
         <targetForm xmi:type="expression:Expression" xmi:id="_Iwq8MB4CEfGEktRq6S-Viw" name="formPedirCita" content="09bf3942-5039-49bc-9805-5c746c3ab34b" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

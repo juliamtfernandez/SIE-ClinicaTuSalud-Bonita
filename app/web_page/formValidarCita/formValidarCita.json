@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "144ac4e9-ac19-4742-84a5-6f37c7c8a945",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1775553950157,
+  "lastUpdate" : 1776162071877,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -672,6 +672,58 @@
                     {
                       "type" : "component",
                       "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{user.user_name}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "7094b8fb-0c5e-4a10-b8a0-ed2f9bb5a89c",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
                         "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
@@ -901,7 +953,7 @@
         "\t\t//map cita variable to expected task contract input",
         "\t\tcitaInput: {",
         "\t\t\tfechaHoraAsignada: $data.cita.fechaHoraAsignada !== undefined ? $data.cita.fechaHoraAsignada : null,",
-        "\t\t\tmedico: $data.nombre_apellido,",
+        "\t\t\tmedico: $data.user.user_name,",
         "\t\t\testadoCita: $data.cita.estadoCita !== undefined ? $data.cita.estadoCita : null",
         "\t\t}",
         "\t}",
