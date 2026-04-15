@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "53ca6b0e-3eda-48ea-b3b9-c9f1a943b886",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1773478936748,
+  "lastUpdate" : 1776204899238,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -118,6 +118,36 @@
               "id" : "pbText",
               "description" : ""
             }
+          ],
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
+              "reference" : "8eea7b57-7596-42c4-a86d-dd06d2e7bbc7",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [ ]
+              ]
+            }
           ]
         ]
       }
@@ -175,6 +205,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "4e0626ca-220d-4905-a684-5f3d3b896d03",
@@ -526,7 +560,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.medico}}"
+                          "value" : "{{medicoInfo.length ? medicoInfo[0].firstname + ' ' + medicoInfo[0].lastname : cita.medico}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -1062,6 +1096,13 @@
         "    {\"nombre\":\"Aceptada\", \"valor\":\"aceptada\"},",
         "    {\"nombre\":\"Rechazada\", \"valor\":\"rechazada\"}",
         "]"
+      ],
+      "exposed" : false
+    },
+    "medicoInfo" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?f=userName={{cita.medico}}"
       ],
       "exposed" : false
     }
