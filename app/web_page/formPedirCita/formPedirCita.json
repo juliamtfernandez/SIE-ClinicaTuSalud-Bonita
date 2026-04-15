@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "09bf3942-5039-49bc-9805-5c746c3ab34b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1775553029950,
+  "lastUpdate" : 1776255141905,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -914,8 +914,8 @@
       "type" : "json",
       "value" : [
         "[",
-        "    {\"nombre\":\"Mañana\", \"valor\":\"manyana\"},",
-        "    {\"nombre\":\"Tarde\", \"valor\":\"tarde\"}",
+        "    {\"nombre\":\"De 9:00 a 14:00\", \"valor\":\"mañana\"},",
+        "    {\"nombre\":\"De 16:30 a 21:30\", \"valor\":\"tarde\"}",
         "]"
       ],
       "exposed" : false

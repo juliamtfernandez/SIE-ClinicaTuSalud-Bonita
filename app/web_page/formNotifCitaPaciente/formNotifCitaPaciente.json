@@ -1,10 +1,10 @@
 {
-  "id" : "formValidarCita",
-  "name" : "formValidarCita",
+  "id" : "formNotifCitaPaciente",
+  "name" : "formNotifCitaPaciente",
   "type" : "form",
-  "uuid" : "144ac4e9-ac19-4742-84a5-6f37c7c8a945",
+  "uuid" : "0581cfe8-417d-4d48-bb6d-2bb2c03b9268",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776255245896,
+  "lastUpdate" : 1776265578944,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -13,20 +13,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "repeatedCollection" : {
-            "type" : "variable"
-          }
-        },
-        "reference" : "40c91034-01aa-4158-97f8-73c0d34fe62b",
+        "propertyValues" : { },
+        "reference" : "2e49e320-8deb-464c-b330-702998884532",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -65,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d0f9a38b-7b7a-4331-ad0d-452007a93c56",
+              "reference" : "3e455643-728a-4c27-bbf3-d8692ee9e97f",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -111,21 +99,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "labelPosition" : {
-                  "type" : "constant",
-                  "value" : "top"
-                },
-                "labelWidth" : {
-                  "type" : "constant",
-                  "value" : 4
                 }
               },
-              "reference" : "d155bea5-823e-470f-bc4b-be9fc5b4622e",
+              "reference" : "ff58330c-9af0-4f45-b20e-c9d49c0b0cdd",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -150,7 +126,7 @@
             "value" : false
           }
         },
-        "reference" : "37b08609-4588-4d90-bc0e-539b06c00fa5",
+        "reference" : "6aa57aa5-c1af-439a-9cc5-bf40e0bacc2f",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -159,7 +135,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "d2575877-41b1-4d47-bbba-9230815a8a2f",
+          "reference" : "e118ca60-9303-4e61-bbe5-a8f78af71951",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -198,7 +174,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "03408dc5-3776-4fd8-bf63-8ce8b46fe348",
+                "reference" : "59232ac3-1834-4e49-a817-65f2afffd00f",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -230,7 +206,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "050f27f3-4010-4e8e-9e02-a938afd95127",
+                "reference" : "3663c032-0ecf-4653-95eb-0553b2cf53af",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -262,7 +238,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nombre Paciente"
+                          "value" : "Nombre del paciente"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -289,7 +265,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "818acf13-5869-4c3d-ab57-4851671b2241",
+                      "reference" : "8daef412-b7fa-4954-a198-2ea1c32dddaf",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -323,7 +299,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Dni Paciente"
+                          "value" : "Dni del paciente"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -350,7 +326,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "4062540f-8d69-4c05-a586-1b25687a837d",
+                      "reference" : "b2359b06-e3b1-49c1-a188-b09bbbed0e52",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -384,7 +360,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Motivo Consulta"
+                          "value" : "Motivo de la consulta"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -411,7 +387,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "9e033923-230d-4581-abe3-1867d51b9ef4",
+                      "reference" : "b008f782-8c76-4f24-b539-7e61e98f0aa1",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -449,7 +425,56 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{especialidadFormateada}}"
+                          "value" : "{{cita.especialidad}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "52ab846a-3f12-4e5e-9af3-e3bba4a8149e",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!cita.fechaHoraAsignada"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Fecha y hora asignada"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{cita.fechaHoraAsignada|uiDate}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -472,7 +497,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "80aaef13-0142-4b2f-8855-0376ad7c6c83",
+                      "reference" : "cbd70e12-c63c-4567-960d-e004809dc1f9",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -488,93 +513,115 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "showNow" : {
+                        "allowHtml" : {
                           "type" : "constant",
                           "value" : true
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "inlineInput" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Fecha Hora Asignada"
-                        },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "timePlaceholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a time (h:mm:ss a)"
                         },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!cita.medico"
                         },
-                        "labelPosition" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : ""
                         },
-                        "timeFormat" : {
-                          "type" : "constant",
-                          "value" : "h:mm:ss a"
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Médico"
                         },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{medicoInfo.length ? medicoInfo[0].firstname + ' ' + medicoInfo[0].lastname : cita.medico}}"
                         },
-                        "nowLabel" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "Now"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "cita.fechaHoraAsignada"
-                        },
-                        "withTimeZone" : {
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
-                      "reference" : "3029459c-27a9-4fad-be56-0102cd2f3e1a",
+                      "reference" : "e1d1c91b-7b59-43a4-944a-8f58038bfbdf",
                       "hasValidationError" : false,
-                      "id" : "pbDateTimePicker",
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!cita.horarioPreferencia"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Horario de preferencia"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Horario de {{cita.horarioPreferencia}}: ({{horarioFormateado}})"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        }
+                      },
+                      "reference" : "9ae69d9d-2d7d-4028-a619-7a4a118f39a8",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -614,7 +661,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Medico"
+                          "value" : "Estado de la cita"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -629,7 +676,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "nombre_apellido"
+                          "value" : "cita.estadoCita"
                         },
                         "required" : {
                           "type" : "constant",
@@ -662,7 +709,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "14419815-268e-4eb1-bd45-a4fc45c6e95e",
+                      "reference" : "dcc60c3c-a9c4-4e0e-bf9d-82d6f03391b9",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -680,11 +727,11 @@
                       "propertyValues" : {
                         "cssClasses" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "alerta-rechazo"
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : true
+                          "type" : "expression",
+                          "value" : "cita.estadoCita !== \"rechazada\""
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -708,14 +755,14 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{user.user_name}}"
+                          "value" : "Su cita ha sido rechazada. Si desea ponerse en contacto con nosotros llame al 999 999 999 o acuda a secretaría para que atiendan su petición. Muchas gracias."
                         },
                         "alignment" : {
                           "type" : "constant",
                           "value" : "left"
                         }
                       },
-                      "reference" : "7094b8fb-0c5e-4a10-b8a0-ed2f9bb5a89c",
+                      "reference" : "59494627-0c8e-4375-874e-0f9cde1c38ca",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -724,47 +771,31 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "cita.estadoCita !== \"rechazada\""
+                        },
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!cita.horarioPreferencia"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Horario Preferencia"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{horarioFormateado}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : "Default label"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -773,15 +804,127 @@
                         "labelWidth" : {
                           "type" : "constant",
                           "value" : 4
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "<strong> Motivo del rechazo de su cita:</strong><br>\n{{motivoRechazoData.value}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
                         }
                       },
-                      "reference" : "cadef5e6-3079-4963-bc37-e862cc32fcfe",
+                      "reference" : "45ab8b9f-f8c9-4189-b534-d63386faa8b4",
                       "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
+                      "id" : "pbText"
                     }
                   ]
                 ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "texto-grande"
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "cita.estadoCita == \"rechazada\""
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Si le gustaría solicitar una fecha y hora diferente para su cita médica, marque la siguiente casilla:"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "04863417-7833-4802-9bac-6633e0419289",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "cita.estadoCita == \"rechazada\""
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "checkbox-gigante"
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Solicito un cambio de fecha para la cita."
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.solicitaNuevaFechaInput"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  }
+                },
+                "reference" : "55d3cdb2-3bcb-4c79-81af-1d70fd2009bd",
+                "hasValidationError" : false,
+                "id" : "pbCheckbox",
+                "description" : ""
               }
             ],
             [
@@ -859,7 +1002,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9586e5a9-4781-4e4f-b280-a7772010075d",
+                "reference" : "caade4b5-8b76-440a-892a-745490ca44bc",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -911,7 +1054,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2968b7f1-4af9-4025-a0e0-3329de0415ab",
+                "reference" : "26847227-bdf6-42b4-9778-d74734e816dc",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -927,6 +1070,15 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"solicitaNuevaFechaInput\" : false\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -949,13 +1101,18 @@
       "type" : "expression",
       "value" : [
         "if( $data.cita ){",
+        "    var nuevoEstado = $data.cita.estadoCita;",
+        "    ",
+        "    if ($data.formInput.solicitaNuevaFechaInput){",
+        "        nuevoEstado = \"en revisión\";",
+        "    }",
+        "    ",
         "\treturn {",
         "\t\t//map cita variable to expected task contract input",
         "\t\tcitaInput: {",
-        "\t\t\tfechaHoraAsignada: $data.cita.fechaHoraAsignada !== undefined ? $data.cita.fechaHoraAsignada : null,",
-        "\t\t\tmedico: $data.user.user_name,",
-        "\t\t\testadoCita: $data.cita.estadoCita !== undefined ? $data.cita.estadoCita : null",
-        "\t\t}",
+        "\t\t\testadoCita: $data.cita.estadoCita !== undefined ? nuevoEstado : null",
+        "\t\t},",
+        "\t\tsolicitaNuevaFechaInput: $data.formInput.solicitaNuevaFechaInput",
         "\t}",
         "}"
       ],
@@ -982,39 +1139,10 @@
       ],
       "exposed" : false
     },
-    "especialidades" : {
-      "type" : "json",
+    "medicoInfo" : {
+      "type" : "url",
       "value" : [
-        "[",
-        "    {\"nombre\":\"Traumatología\",\"valor\":\"traumatologia\"},",
-        "    {\"nombre\":\"Ginecología\",\"valor\":\"ginecologia\"},",
-        "    {\"nombre\":\"Medicina General\",\"valor\":\"medicina_general\"},",
-        "    {\"nombre\":\"Dermatología\",\"valor\":\"dermatologia\"},",
-        "    {\"nombre\":\"Digestivo\",\"valor\":\"digestivo\"},",
-        "    {\"nombre\":\"Cardiología\",\"valor\":\"cardiologia\"},",
-        "    {\"nombre\":\"Oftalmología\",\"valor\":\"oftalmologia\"},",
-        "    {\"nombre\":\"Salud Mental\",\"valor\":\"salud_mental\"}",
-        "]"
-      ],
-      "exposed" : false
-    },
-    "especialidadFormateada" : {
-      "type" : "expression",
-      "value" : [
-        "if ($data.cita && $data.cita.especialidad && $data.especialidades) {\r",
-        "    // Buscamos en la lista JSON cuál coincide con el valor guardado\r",
-        "    var coincidencia = $data.especialidades.find(function(item) {\r",
-        "        return item.valor === $data.cita.especialidad;\r",
-        "    });\r",
-        "    \r",
-        "    // Si lo encuentra, devuelve el nombre bonito. Si no, devuelve lo que haya.\r",
-        "    if (coincidencia) {\r",
-        "        return coincidencia.nombre;\r",
-        "    } else {\r",
-        "        return $data.cita.especialidad;\r",
-        "    }\r",
-        "}\r",
-        "return \"\";"
+        "../API/identity/user?f=userName={{cita.medico}}"
       ],
       "exposed" : false
     },
@@ -1038,40 +1166,26 @@
       ],
       "exposed" : false
     },
-    "info_profesional" : {
+    "motivoRechazoData" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user/{{user.user_id}}?d=professional_data"
-      ],
-      "exposed" : false
-    },
-    "nombre_apellido" : {
-      "type" : "expression",
-      "value" : [
-        "return $data.info_profesional.firstname + \" \"+ $data.info_profesional.lastname;"
-      ],
-      "exposed" : false
-    },
-    "user" : {
-      "type" : "url",
-      "value" : [
-        "../API/system/session/1"
+        "../API/bpm/caseVariable/{{task.caseId}}/motivoRechazoProc"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "ce6e3609-3ef3-45ab-9564-3e670acc4d00",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "c2e01a3d-e9a0-483d-b543-e900fe56ab10",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "34c3cffc-3481-4e10-bb52-75b2364c00e3",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "ae35a1a6-8e49-4240-b3cf-a015dcf68a72",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
