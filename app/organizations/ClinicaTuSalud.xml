@@ -199,9 +199,417 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
-    <user userName="Usuario1">
+    <user userName="paula.sanchez">
       <firstName>Paula</firstName>
       <lastName>S&#xe1;nchez</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="carlos.ruiz">
+      <firstName>Carlos</firstName>
+      <lastName>Ruiz</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>medicina_general</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="ana.castillo">
+      <firstName>Ana</firstName>
+      <lastName>Castillo</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="elena.torres">
+      <firstName>Elena</firstName>
+      <lastName>Torres</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="pablo.navarro">
+      <firstName>Pablo</firstName>
+      <lastName>Navarro</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="diego.herrera">
+      <firstName>Diego</firstName>
+      <lastName>Herrera</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="marcos.vidal">
+      <firstName>Marcos</firstName>
+      <lastName>Vidal</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="claudia.rojas">
+      <firstName>Claudia</firstName>
+      <lastName>Rojas</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="natalia.paredes">
+      <firstName>Natalia</firstName>
+      <lastName>Paredes</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="jorge.ruiz">
+      <firstName>Jorge</firstName>
+      <lastName>Ruiz</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="david.castillo">
+      <firstName>David</firstName>
+      <lastName>Castillo</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="nuria.blasco">
+      <firstName>Nuria</firstName>
+      <lastName>Blasco</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="maria.flores">
+      <firstName>Mar&#xed;a</firstName>
+      <lastName>Flores</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="alba.reyes">
+      <firstName>Alba</firstName>
+      <lastName>Reyes</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="bruno.vidal">
+      <firstName>Bruno</firstName>
+      <lastName>Vidal</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>ginecologia</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="eva.navarro">
+      <firstName>Eva</firstName>
+      <lastName>Navarro</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>ginecologia</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="paula.romero">
+      <firstName>Paula</firstName>
+      <lastName>Romero</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>digestivo</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="juan.herrera">
+      <firstName>Juan</firstName>
+      <lastName>Herrera</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>cardiologia</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="sonia.casado">
+      <firstName>Sonia</firstName>
+      <lastName>Casado</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>oftalmologia</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="nuria.rojas">
+      <firstName>Nuria</firstName>
+      <lastName>Rojas</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>salud_mental</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="david.reyes">
+      <firstName>David</firstName>
+      <lastName>Reyes</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>salud_mental</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="paula.torres">
+      <firstName>Paula</firstName>
+      <lastName>Torres</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="daniel.herrera">
+      <firstName>Daniel</firstName>
+      <lastName>Herrera</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="javier.romero">
+      <firstName>Javier</firstName>
+      <lastName>Romero</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="sara.torres">
+      <firstName>Sara</firstName>
+      <lastName>Torres</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -359,9 +767,148 @@
       <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
     </membership>
     <membership>
-      <userName>Usuario1</userName>
+      <userName>paula.sanchez</userName>
       <roleName>Enfermero</roleName>
       <groupName>&#xc1;rea Cl&#xed;nica</groupName>
+    </membership>
+    <membership>
+      <userName>carlos.ruiz</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Medicina General</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ana.castillo</userName>
+      <roleName>T&#xe9;cnico Sanitario</roleName>
+      <groupName>Servicios Diagn&#xf3;sticos</groupName>
+    </membership>
+    <membership>
+      <userName>elena.torres</userName>
+      <roleName>Administrativo</roleName>
+      <groupName>Administraci&#xf3;n</groupName>
+    </membership>
+    <membership>
+      <userName>pablo.navarro</userName>
+      <roleName>Administrativo</roleName>
+      <groupName>Administraci&#xf3;n</groupName>
+    </membership>
+    <membership>
+      <userName>diego.herrera</userName>
+      <roleName>Administrativo</roleName>
+      <groupName>Administraci&#xf3;n</groupName>
+    </membership>
+    <membership>
+      <userName>marcos.vidal</userName>
+      <roleName>Administrativo</roleName>
+      <groupName>Administraci&#xf3;n</groupName>
+    </membership>
+    <membership>
+      <userName>claudia.rojas</userName>
+      <roleName>Enfermero</roleName>
+      <groupName>Medicina General</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>natalia.paredes</userName>
+      <roleName>Enfermero</roleName>
+      <groupName>Medicina General</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jorge.ruiz</userName>
+      <roleName>Enfermero</roleName>
+      <groupName>Medicina General</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>david.castillo</userName>
+      <roleName>Enfermero</roleName>
+      <groupName>Traumatolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nuria.blasco</userName>
+      <roleName>Enfermero</roleName>
+      <groupName>Ginecolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>maria.flores</userName>
+      <roleName>Enfermero</roleName>
+      <groupName>Digestivo</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>alba.reyes</userName>
+      <roleName>Enfermero</roleName>
+      <groupName>Cardiolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>bruno.vidal</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Ginecolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>eva.navarro</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Ginecolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>paula.romero</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Digestivo</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>juan.herrera</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Cardiolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>sonia.casado</userName>
+      <roleName>Medico Especialista</roleName>
+      <groupName>Oftalmolog&#xed;a</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nuria.rojas</userName>
+      <roleName>Director</roleName>
+      <groupName>Salud Mental</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>david.reyes</userName>
+      <roleName>Psic&#xf3;logo</roleName>
+      <groupName>Salud Mental</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>paula.torres</userName>
+      <roleName>Fisioterapeuta</roleName>
+      <groupName>Rehabilitaci&#xf3;n</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>daniel.herrera</userName>
+      <roleName>Fisioterapeuta</roleName>
+      <groupName>Rehabilitaci&#xf3;n</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>javier.romero</userName>
+      <roleName>Fisioterapeuta</roleName>
+      <groupName>Rehabilitaci&#xf3;n</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>sara.torres</userName>
+      <roleName>Fisioterapeuta</roleName>
+      <groupName>Rehabilitaci&#xf3;n</groupName>
+      <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
