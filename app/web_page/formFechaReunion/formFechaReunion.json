@@ -1,29 +1,123 @@
 {
-  "id" : "formSolicitarReunion2",
-  "name" : "formSolicitarReunion2",
+  "id" : "formFechaReunion",
+  "name" : "formFechaReunion",
   "type" : "form",
-  "uuid" : "eb0525d0-8c55-4bc0-b162-7c81854df0bd",
+  "uuid" : "a1656b73-d4fe-464d-a263-89c4346e7821",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776368825297,
+  "lastUpdate" : 1776367921830,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "0fd26ace-5bbe-48bd-bdbc-35c04eebbe0d",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "8aa7488f-9099-4d33-9c52-71303e15ce0c",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "0fde6f52-70d5-4d37-8e9b-b6e2d8081d6f",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
     [
       {
         "type" : "formContainer",
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "067471e9-a365-476b-9a04-969524f00c2a",
+        "propertyValues" : { },
+        "reference" : "77dd5aa1-9a8b-4e6b-80f4-da2ff421f705",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -32,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "721c8099-1c32-4ef4-99ef-ce63754863be",
+          "reference" : "2fafa555-6349-458b-a922-d9b0fe3d20c3",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -71,62 +165,10 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a482a8f0-884d-41e3-9285-3707abf8b2a4",
+                "reference" : "aa80d54d-013e-4276-9c02-5f030efc47d1",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "{{formInput}} <br>\n{{formOutput}}<br>\n{{reunion.gruposReunir | json}}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "2d3bbd9c-c3ef-46ad-9258-83bb52c71c96",
-                "hasValidationError" : false,
-                "id" : "pbText"
               }
             ],
             [
@@ -155,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9f4309b7-08e6-4ae9-808d-ec1015581736",
+                "reference" : "06d92886-3852-4a17-a637-a62f37f8e969",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -169,57 +211,42 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!reunion.titulo"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Titulo"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{reunion.titulo}}"
                         },
-                        "type" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.reunionInput.titulo"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "917c4799-c9b5-4e90-955f-f45097322315",
+                      "reference" : "48684ad6-4ce9-4202-b839-f5b268ff4a11",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -233,83 +260,42 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!reunion.medicoSolicitante"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Medico Solicitante"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{reunion.medicoSolicitante}}"
                         },
-                        "type" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "nombre_medico"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "59eb4876-6685-4a06-b0e1-41c7089fc0c5",
+                      "reference" : "fdf52dc3-b10d-46c2-859f-54638ca62bab",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -323,152 +309,43 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
+                        "allowHtml" : {
                           "type" : "constant",
                           "value" : true
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Grupos a reunir"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.reunionInput.gruposReunir"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "31a8fa3f-6d51-4766-8b5f-37c4cff45424",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "inline" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Grupos a reunir"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "availableValues" : {
+                        "hidden" : {
                           "type" : "expression",
-                          "value" : "grupos"
+                          "value" : "!reunion.gruposReunir"
                         },
-                        "displayedKey" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : "nombre"
+                          "value" : ""
                         },
-                        "returnedKey" : {
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Grupos Reunir"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{reunion.gruposReunir}}"
+                        },
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "valor"
+                          "value" : "left"
                         },
-                        "selectedValues" : {
-                          "type" : "variable",
-                          "value" : "formInput.reunionInput.gruposReunir"
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         }
                       },
-                      "reference" : "3930ec03-0906-41c5-8006-60c21dfd74fe",
+                      "reference" : "d2568f91-ee12-4823-9b19-283bc173377b",
                       "hasValidationError" : false,
-                      "id" : "pbChecklist"
+                      "id" : "pbText",
+                      "description" : ""
                     }
                   ],
                   [
@@ -481,17 +358,21 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "showNow" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
                           "type" : "constant",
+                          "value" : false
+                        },
+                        "inlineInput" : {
+                          "type" : "constant",
                           "value" : true
                         },
-                        "labelPosition" : {
+                        "dateFormat" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : "MM/dd/yyyy"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -504,60 +385,119 @@
                         "readOnly" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Fecha Hora Asignada"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "timePlaceholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a time (h:mm:ss a)"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "timeFormat" : {
+                          "type" : "constant",
+                          "value" : "h:mm:ss a"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "nowLabel" : {
+                          "type" : "constant",
+                          "value" : "Now"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reunion.fechaHoraAsignada"
+                        },
+                        "withTimeZone" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "a972d75d-8f1d-4ab2-958f-950e07dbf61b",
+                      "hasValidationError" : false,
+                      "id" : "pbDateTimePicker",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!reunion.tipoReunion"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Tipo Reunion"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{reunion.tipoReunion}}"
                         },
-                        "type" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.reunionInput.tipoReunion"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "9f26968c-e6f2-4be0-8410-7191769e1b15",
+                      "reference" : "d9405f85-c62b-4936-8abb-63e194b55f13",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -565,91 +505,19 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
                         "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Tipo de reunión"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
-                        "availableValues" : {
+                        "hidden" : {
                           "type" : "expression",
-                          "value" : "tipo_reunion"
-                        },
-                        "displayedKey" : {
-                          "type" : "constant",
-                          "value" : "nombre"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant",
-                          "value" : "valor"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.reunionInput.tipoReunion"
-                        }
-                      },
-                      "reference" : "f995d73c-2e79-4d4c-a256-6793d9c964c7",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : "reunion.tipoReunion !== \"presencial\""
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -669,14 +537,15 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Motivos de convocatoria"
+                          "value" : "Sala Reunion"
                         },
                         "placeholder" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : ""
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "number"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -684,7 +553,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.reunionInput.motivoReunion"
+                          "value" : "reunion.salaReunion"
                         },
                         "required" : {
                           "type" : "constant",
@@ -717,9 +586,107 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "5aa22c8c-0f10-4a35-9312-97a1a2cf9760",
+                      "reference" : "c50dc54e-25e4-4972-b77d-17acb4ee88cc",
                       "hasValidationError" : false,
                       "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!reunion.estadoReunion"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Estado Reunion"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{reunion.estadoReunion}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "926be386-224a-49d6-99ca-d90bfad78f8b",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!reunion.motivoReunion"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Motivo Reunion"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{reunion.motivoReunion}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "4c2cfd54-0df5-4c39-bade-ce9fc24e06d6",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ]
@@ -780,7 +747,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Start process"
+                    "value" : "Submit task"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -799,85 +766,12 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "3c7599f5-2a24-46e5-aed0-d28c960e457d",
+                "reference" : "c3f71e7b-017e-4dab-9258-8beb671e1557",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "{{grupos_text}}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "a17e2dc3-5dd8-474e-8f79-31f445cae472",
-                "hasValidationError" : false,
-                "id" : "pbText"
               }
             ],
             [
@@ -926,7 +820,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "320df5e5-e565-491a-93d7-fd01c79355ca",
+                "reference" : "55d2663c-1e7c-4b8b-b40d-ec59fd5b9958",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -938,18 +832,10 @@
     ]
   ],
   "variables" : {
-    "formInput" : {
-      "type" : "json",
+    "task" : {
+      "type" : "url",
       "value" : [
-        "{\r",
-        "  \"reunionInput\" : {\r",
-        "    \"titulo\" : \"\",\r",
-        "    \"medicoSolicitante\" : \"\",\r",
-        "    \"gruposReunir\" : \"\",\r",
-        "    \"tipoReunion\" : \"\",\r",
-        "    \"motivoReunion\" : \"\"\r",
-        "  }\r",
-        "}"
+        "../API/bpm/userTask/{{taskId}}"
       ],
       "exposed" : false
     },
@@ -971,90 +857,52 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "var reunionInput=  $data.formInput.reunionInput",
-        "",
-        "reunionInput.medicoSolicitante= $data.nombre_medico",
-        "",
-        "return{ reunionInput: reunionInput",
+        "if( $data.reunion ){",
+        "\treturn {",
+        "\t\t//map reunion variable to expected task contract input",
+        "\t\treunionInput: {",
+        "\t\t\tfechaHoraAsignada: $data.reunion.fechaHoraAsignada !== undefined ? $data.reunion.fechaHoraAsignada : null,",
+        "\t\t\tsalaReunion: $data.reunion.salaReunion !== undefined ? $data.reunion.salaReunion : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
     },
-    "nombre_medico" : {
-      "type" : "expression",
-      "value" : [
-        "return $data.info_profesional.firstname + \" \"+ $data.info_profesional.lastname;"
-      ],
-      "exposed" : false
-    },
-    "grupos" : {
-      "type" : "json",
-      "value" : [
-        "[\r",
-        "  { \"nombre\": \"Dirección\", \"valor\": \"Dirección\" },\r",
-        "  { \"nombre\": \"Administración\", \"valor\": \"Administración\" },\r",
-        "  { \"nombre\": \"Traumatología\", \"valor\": \"Traumatología\" },\r",
-        "  { \"nombre\": \"Ginecología\", \"valor\": \"Ginecología\" },\r",
-        "  { \"nombre\": \"Medicina General\", \"valor\": \"Medicina General\" },\r",
-        "  { \"nombre\": \"Dermatología\", \"valor\": \"Dermatología\" },\r",
-        "  { \"nombre\": \"Digestivo\", \"valor\": \"Digestivo\" },\r",
-        "  { \"nombre\": \"Cardiología\", \"valor\": \"Cardiología\" },\r",
-        "  { \"nombre\": \"Oftalmología\", \"valor\": \"Oftalmología\" },\r",
-        "  { \"nombre\": \"Rehabilitación\", \"valor\": \"Rehabilitación\" },\r",
-        "  { \"nombre\": \"Salud Mental\", \"valor\": \"Salud Mental\" },\r",
-        "  { \"nombre\": \"Servicios Diagnósticos\", \"valor\": \"Servicios Diagnósticos\" }\r",
-        "]"
-      ],
-      "exposed" : false
-    },
-    "tipo_reunion" : {
-      "type" : "json",
-      "value" : [
-        "[",
-        "  { \"nombre\": \"Presencial\", \"valor\": \"presencial\" },",
-        "  { \"nombre\": \"Telemática\", \"valor\": \"telematica\" }",
-        "]"
-      ],
-      "exposed" : false
-    },
-    "info_profesional" : {
+    "context" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user/{{user.user_id}}?d=professional_data"
+        "../API/bpm/userTask/{{taskId}}/context"
       ],
       "exposed" : false
     },
-    "user" : {
+    "reunion" : {
       "type" : "url",
       "value" : [
-        "../API/system/session/1"
+        "../{{context.reunion_ref.link}}"
       ],
       "exposed" : false
     },
-    "grupos_text" : {
-      "type" : "expression",
+    "taskId" : {
+      "type" : "urlparameter",
       "value" : [
-        "if ($data.formInput && $data.formInput.reunionInput && $data.formInput.reunionInput.gruposReunir) {",
-        "    // Usamos .join() para convertir el Array en un texto separado por comas",
-        "    return $data.formInput.reunionInput.gruposReunir.join(', ');",
-        "}",
-        "return \"\";"
+        "id"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "57d40056-3594-46a2-bcb7-2a89e9c1230d",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "e53f9fc2-9875-4659-b292-8d105838f3fd",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "33078b4c-8800-43ca-ba17-0045bfd1544d",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "ae506319-6eee-48d8-bf00-cd8b51d0da2c",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
