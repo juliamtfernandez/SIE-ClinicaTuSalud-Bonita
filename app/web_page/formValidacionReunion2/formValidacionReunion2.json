@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "404635b0-f567-4783-94c9-dcfc32037c2c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776286238137,
+  "lastUpdate" : 1776332272148,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -99,6 +99,18 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
                 }
               },
               "reference" : "27143ba0-2660-415c-9656-5d2d24fb9caf",
@@ -331,7 +343,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{reunion.gruposReunir}}"
+                          "value" : "{{reunion.gruposReunir.replace('[','').replace(']','').replaceAll('\"','')}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -340,6 +352,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "53f484b0-fc53-4758-8ab8-e361dfd566d2",

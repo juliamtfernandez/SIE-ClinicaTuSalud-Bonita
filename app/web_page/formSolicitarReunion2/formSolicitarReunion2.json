@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "eb0525d0-8c55-4bc0-b162-7c81854df0bd",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776326714693,
+  "lastUpdate" : 1776332253291,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -93,7 +93,7 @@
                   },
                   "hidden" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -117,7 +117,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{formInput}} <br>\n{{formOutput}}"
+                    "value" : "{{formInput}} <br>\n{{formOutput}}<br>\n{{reunion.gruposReunir | json}}"
                   },
                   "alignment" : {
                     "type" : "constant",
