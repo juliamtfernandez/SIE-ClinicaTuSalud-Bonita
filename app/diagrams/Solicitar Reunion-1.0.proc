@@ -25,13 +25,24 @@
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_OesgEDkLEfGjc_2xxDd5Ug">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_OesgETkLEfGjc_2xxDd5Ug" name="motivoRechazoReProc" content="motivoRechazoReProc" type="TYPE_VARIABLE">
+              <referencedElements xmi:type="process:Data" xmi:id="_PfufQDkLEfGjc_2xxDd5Ug" name="motivoRechazoReProc" dataType="_2eLOgTiyEfGTKpeDLd0APg"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_OesgEjkLEfGjc_2xxDd5Ug" name="motivoRechazoReunionInput" content="motivoRechazoReunionInput" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_RBBS4DkLEfGjc_2xxDd5Ug" name="motivoRechazoReunionInput">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_RBBS4TkLEfGjc_2xxDd5Ug"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_OesgEzkLEfGjc_2xxDd5Ug" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_2eLOWziyEfGTKpeDLd0APg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_2eLOXDiyEfGTKpeDLd0APg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_2eLOXTiyEfGTKpeDLd0APg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_2eLOXjiyEfGTKpeDLd0APg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_2eLOXziyEfGTKpeDLd0APg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_2eLOYDiyEfGTKpeDLd0APg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_-2RHkDjnEfGjc_2xxDd5Ug" name="formValidacionReunion1" content="b447b25e-961b-4b98-867f-02ac33caf744" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_W4bVsDkMEfGjc_2xxDd5Ug" name="formValidacionReunion2" content="404635b0-f567-4783-94c9-dcfc32037c2c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_2eLOYjiyEfGTKpeDLd0APg">
             <inputs xmi:type="process:ContractInput" xmi:id="_8BsuMDjnEfGjc_2xxDd5Ug" name="reunionInput" type="COMPLEX" dataReference="reunion" createMode="false">
@@ -65,7 +76,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="__Ha7GDi9EfGTKpeDLd0APg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="__Ha7Fzi9EfGTKpeDLd0APg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="__p-1mTi9EfGTKpeDLd0APg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_7R2SsDj0EfGjc_2xxDd5Ug" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_VGU7YDkLEfGjc_2xxDd5Ug" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="__p-1mDi9EfGTKpeDLd0APg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="__p-1mzi9EfGTKpeDLd0APg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -75,6 +86,9 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ZQAtaTjmEfGjc_2xxDd5Ug" name="initReunion()" content="def reunionVar = new com.company.model.Reunion()&#xD;&#xA;reunionVar.titulo = reunionInput?.titulo&#xD;&#xA;reunionVar.medicoSolicitante = reunionInput?.medicoSolicitante&#xD;&#xA;reunionVar.gruposReunir = reunionInput?.gruposReunir&#xD;&#xA;reunionVar.tipoReunion = reunionInput?.tipoReunion&#xD;&#xA;reunionVar.motivoReunion = reunionInput?.motivoReunion&#xD;&#xA;return reunionVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Reunion">
           <referencedElements xmi:type="process:ContractInput" xmi:id="_ZQAtajjmEfGjc_2xxDd5Ug" name="reunionInput" type="COMPLEX"/>
         </defaultValue>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_KDqfMDkLEfGjc_2xxDd5Ug" name="motivoRechazoReProc" dataType="_2eLOgTiyEfGTKpeDLd0APg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_KDqfMTkLEfGjc_2xxDd5Ug" name="&quot;&quot;" content="&quot;&quot;"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_2eLOZDiyEfGTKpeDLd0APg">
         <targetForm xmi:type="expression:Expression" xmi:id="_BEiKYDjyEfGjc_2xxDd5Ug" name="formSolicitarReunion2" content="eb0525d0-8c55-4bc0-b162-7c81854df0bd" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

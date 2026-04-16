@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "eb0525d0-8c55-4bc0-b162-7c81854df0bd",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776275984581,
+  "lastUpdate" : 1776326714693,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -75,6 +75,58 @@
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{formInput}} <br>\n{{formOutput}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "2d3bbd9c-c3ef-46ad-9258-83bb52c71c96",
+                "hasValidationError" : false,
+                "id" : "pbText"
               }
             ],
             [
@@ -277,7 +329,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -792,7 +844,7 @@
                   },
                   "hidden" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -919,11 +971,11 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "var reunionInput= $data.formInput.reunionInput",
+        "var reunionInput=  $data.formInput.reunionInput",
         "",
+        "reunionInput.medicoSolicitante= $data.nombre_medico",
         "",
-        "return {",
-        "\treunionInput: reunionInput",
+        "return{ reunionInput: reunionInput",
         "}"
       ],
       "exposed" : false
