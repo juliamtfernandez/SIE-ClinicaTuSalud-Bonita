@@ -157,7 +157,7 @@
       <customUserInfoValues>
         <customUserInfoValue>
           <name>especialidad</name>
-          <value>medicina general</value>
+          <value>medicina_general</value>
         </customUserInfoValue>
         <customUserInfoValue>
           <name>dni</name>
@@ -174,7 +174,7 @@
       <customUserInfoValues>
         <customUserInfoValue>
           <name>especialidad</name>
-          <value>medicina general</value>
+          <value>medicina_general</value>
         </customUserInfoValue>
         <customUserInfoValue>
           <name>dni</name>
@@ -185,6 +185,23 @@
     <user userName="javier.torres">
       <firstName>Javier</firstName>
       <lastName>Torres</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>dni</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Usuario1">
+      <firstName>Paula</firstName>
+      <lastName>S&#xe1;nchez</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -340,6 +357,11 @@
       <roleName>Medico Especialista</roleName>
       <groupName>Medicina General</groupName>
       <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Usuario1</userName>
+      <roleName>Enfermero</roleName>
+      <groupName>&#xc1;rea Cl&#xed;nica</groupName>
     </membership>
   </memberships>
 </organization:Organization>
