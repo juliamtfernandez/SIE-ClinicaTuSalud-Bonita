@@ -39,15 +39,35 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_GospkjnOEfGwG6KO0GtnLA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_GospkTnOEfGwG6KO0GtnLA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_GospkznOEfGwG6KO0GtnLA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_AQgQcTomEfGprIkkbMK1Bw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_AQgQcjomEfGprIkkbMK1Bw" name="archivoReunion" content="archivoReunion" type="DOCUMENT_REF_TYPE">
+              <referencedElements xmi:type="process:Document" xmi:id="_AQgQczomEfGprIkkbMK1Bw" name="archivoReunion"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_AQgQdDomEfGprIkkbMK1Bw" name="archivoReunionDocumentInput" content="archivoReunionDocumentInput" type="TYPE_CONTRACT_INPUT" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_AQgQdTomEfGprIkkbMK1Bw" name="archivoReunionDocumentInput" type="FILE" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_AQgQdjomEfGprIkkbMK1Bw" type="DOCUMENT_CREATE_UPDATE"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_GosplDnOEfGwG6KO0GtnLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_GosplTnOEfGwG6KO0GtnLA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_GospljnOEfGwG6KO0GtnLA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_GospmDnOEfGwG6KO0GtnLA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_GosplznOEfGwG6KO0GtnLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_J1HiSjnOEfGwG6KO0GtnLA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_J1HiSznOEfGwG6KO0GtnLA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_IA5qoDomEfGprIkkbMK1Bw" name="formArchivoReunion1" content="de7623f6-e013-48f1-8261-909965aab57c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_J1HiSTnOEfGwG6KO0GtnLA"/>
+          <contract xmi:type="process:Contract" xmi:id="_J1HiSTnOEfGwG6KO0GtnLA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_e5FqsDojEfGprIkkbMK1Bw" name="reunionInput" type="COMPLEX" dataReference="reunion" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_e5FqsTojEfGprIkkbMK1Bw" name="titulo" createMode="false"/>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_AQgQcDomEfGprIkkbMK1Bw" name="archivoReunionDocumentInput" type="FILE" dataReference="archivoReunion" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_FQqXoDomEfGprIkkbMK1Bw" name="comentariosInput">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_FQqXoTomEfGprIkkbMK1Bw"/>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_e5G40DojEfGprIkkbMK1Bw" expression="reunionInput?.titulo != null" errorMessage="titulo is mandatory for Reunion" name="mandatory_reunionInput_titulo">
+              <inputNames>reunionInput</inputNames>
+            </constraints>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_J1HiTDnOEfGwG6KO0GtnLA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_ju0rMDnOEfGwG6KO0GtnLA" name="Fin2" incoming="_ju0rODnOEfGwG6KO0GtnLA">
@@ -162,6 +182,9 @@
       <data xmi:type="process:Data" xmi:id="_KDqfMDkLEfGjc_2xxDd5Ug" name="motivoRechazoReProc" dataType="_2eLOgTiyEfGTKpeDLd0APg">
         <defaultValue xmi:type="expression:Expression" xmi:id="_KDqfMTkLEfGjc_2xxDd5Ug" name="&quot;&quot;" content="&quot;&quot;"/>
       </data>
+      <data xmi:type="process:Data" xmi:id="_YwzBUDokEfGprIkkbMK1Bw" name="comentariosReunion" dataType="_2eLOgTiyEfGTKpeDLd0APg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_YwzBUTokEfGprIkkbMK1Bw" name="&quot;&quot;" content="&quot;&quot;"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_2eLOZDiyEfGTKpeDLd0APg">
         <targetForm xmi:type="expression:Expression" xmi:id="_BEiKYDjyEfGjc_2xxDd5Ug" name="formSolicitarReunion2" content="eb0525d0-8c55-4bc0-b162-7c81854df0bd" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -223,6 +246,11 @@
           <inputNames>reunionInput</inputNames>
         </constraints>
       </contract>
+      <documents xmi:type="process:Document" xmi:id="_XGf4IDojEfGprIkkbMK1Bw" name="archivoReunion">
+        <mimeType xmi:type="expression:Expression" xmi:id="_XGf4ITojEfGprIkkbMK1Bw" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_XGf4IjojEfGprIkkbMK1Bw" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_XGf4IzojEfGprIkkbMK1Bw" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_2eLObTiyEfGTKpeDLd0APg">
         <name xmi:type="expression:Expression" xmi:id="_2eLObjiyEfGTKpeDLd0APg" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_2eLObziyEfGTKpeDLd0APg" content="" returnTypeFixed="true"/>
