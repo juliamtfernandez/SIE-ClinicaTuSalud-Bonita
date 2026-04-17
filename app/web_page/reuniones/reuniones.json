@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "042a0bbb-f8ed-4d5a-b48a-9af5c4a615a2",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776345019041,
+  "lastUpdate" : 1776420741855,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -514,11 +514,37 @@
                             },
                             "value" : {
                               "type" : "variable",
-                              "value" : "reunion_selected.gruposReunir"
+                              "value" : "reunion_selected.gruposReunir.replace('[','').replace(']','').replaceAll('\"','')"
                             },
                             "required" : {
                               "type" : "constant",
                               "value" : false
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "minLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "maxLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "debounce" : {
+                              "type" : "constant",
+                              "value" : 0
+                            },
+                            "min" : {
+                              "type" : "constant"
+                            },
+                            "max" : {
+                              "type" : "constant"
+                            },
+                            "step" : {
+                              "type" : "constant",
+                              "value" : 1
                             }
                           },
                           "reference" : "40706818-9095-4df9-a2e9-d951e75ec8ef",
@@ -539,7 +565,7 @@
                           "propertyValues" : {
                             "showNow" : {
                               "type" : "constant",
-                              "value" : true
+                              "value" : false
                             },
                             "hidden" : {
                               "type" : "expression",
@@ -617,6 +643,10 @@
                               "value" : "reunion_selected.fechaHoraAsignada"
                             },
                             "withTimeZone" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "allowHTML" : {
                               "type" : "constant",
                               "value" : false
                             }
@@ -1001,8 +1031,12 @@
     "userEsMedico" : {
       "type" : "expression",
       "value" : [
-        "return $data.membresiasUser.some(\r",
-        "  membresia => membresia.role_id === $data.idRolMedico\r",
+        "return $data.membresiasUser.some(",
+        "  membresia => ",
+        "  membresia.role_id === $data.idRolMedico ||",
+        "  membresia.role_id === $data.idRolEnfermero ||",
+        "  membresia.role_id === $data.idRolFisio ||",
+        "  membresia.role_id === $data.idRolPsi",
         ");"
       ],
       "exposed" : false
@@ -1012,6 +1046,30 @@
       "value" : [
         "const rolMedico = $data.roles.find(rol => rol.name === \"Medico Especialista\");\r",
         "return rolMedico ? rolMedico.id : null;"
+      ],
+      "exposed" : false
+    },
+    "idRolEnfermero" : {
+      "type" : "expression",
+      "value" : [
+        "const rolEnf = $data.roles.find(rol => rol.name === \"Enfermero\");\r",
+        "return rolEnf ? rolEnf.id : null;"
+      ],
+      "exposed" : false
+    },
+    "idRolFisio" : {
+      "type" : "expression",
+      "value" : [
+        "const rolFisio = $data.roles.find(rol => rol.name === \"Fisioterapeuta\");\r",
+        "return rolFisio ? rolFisio.id : null;"
+      ],
+      "exposed" : false
+    },
+    "idRolPsi" : {
+      "type" : "expression",
+      "value" : [
+        "const rolPsi = $data.roles.find(rol => rol.name === \"Psicólogo\");\r",
+        "return rolPsi ? rolPsi.id : null;"
       ],
       "exposed" : false
     }
