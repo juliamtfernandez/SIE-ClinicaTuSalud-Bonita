@@ -15,7 +15,9 @@
       <firstName>Juan</firstName>
       <lastName>Gonz&#xe1;lez</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>juan.gonzalez@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -32,7 +34,9 @@
       <firstName>Laura</firstName>
       <lastName>P&#xe9;rez</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>lauraperez@</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -67,7 +71,9 @@
       <lastName>Cort&#xe9;s</lastName>
       <manager></manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>jesus.cortes@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>

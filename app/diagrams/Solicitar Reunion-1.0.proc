@@ -20,6 +20,13 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_rSGr5DnNEfGwG6KO0GtnLA">
             <targetForm xmi:type="expression:Expression" xmi:id="_5ST3QDnNEfGwG6KO0GtnLA" name="formNotifRechazoReunion" content="a365004d-13f2-48b2-b9c8-d6071a27220a" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_4sMdwDpiEfGxrNcWTsCkrw" name="iniciador" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_4sMdwTpiEfGxrNcWTsCkrw" definitionId="bonita-actorfilter-initiator" version="1.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_4sMdwjpiEfGxrNcWTsCkrw" key="autoAssign">
+                <expression xmi:type="expression:Expression" xmi:id="_4sMdwzpiEfGxrNcWTsCkrw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_rSGr4znNEfGwG6KO0GtnLA">
             <inputs xmi:type="process:ContractInput" xmi:id="_3PDmEDnNEfGwG6KO0GtnLA" name="reunionInput" type="COMPLEX" dataReference="reunion" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_3PDmETnNEfGwG6KO0GtnLA" name="titulo" createMode="false"/>
@@ -56,6 +63,13 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_J1HiSjnOEfGwG6KO0GtnLA">
             <targetForm xmi:type="expression:Expression" xmi:id="_IA5qoDomEfGprIkkbMK1Bw" name="formArchivoReunion1" content="de7623f6-e013-48f1-8261-909965aab57c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_6Z-OMDpiEfGxrNcWTsCkrw" name="iniciador" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_6Z-OMTpiEfGxrNcWTsCkrw" definitionId="bonita-actorfilter-initiator" version="1.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_6Z-OMjpiEfGxrNcWTsCkrw" key="autoAssign">
+                <expression xmi:type="expression:Expression" xmi:id="_6Z-OMzpiEfGxrNcWTsCkrw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_J1HiSTnOEfGwG6KO0GtnLA">
             <inputs xmi:type="process:ContractInput" xmi:id="_e5FqsDojEfGprIkkbMK1Bw" name="reunionInput" type="COMPLEX" dataReference="reunion" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_e5FqsTojEfGprIkkbMK1Bw" name="titulo" createMode="false"/>
@@ -186,7 +200,11 @@
                 <expression xmi:type="expression:Expression" xmi:id="_d6gEFTo6EfGcXPhadnzltw" name="jdbc:postgresql://db_odoo/Clinica_TuSalud" content="jdbc:postgresql://db_odoo/Clinica_TuSalud" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_d6gEFjo6EfGcXPhadnzltw" key="script">
-                <expression xmi:type="expression:Expression" xmi:id="_d6gEFzo6EfGcXPhadnzltw" name="&lt;pattern-expression>" content="Prueba" type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_d6gEFzo6EfGcXPhadnzltw" name="insertarReunionBD()" content="String titulo = reunion.titulo ?: &quot;Reunión sin título&quot;;&#xD;&#xA;titulo = titulo.replace(&quot;'&quot;, &quot;''&quot;);&#xD;&#xA;&#xD;&#xA;long iniciadorId = apiAccessor.getProcessAPI().getProcessInstance(processInstanceId).getStartedBy();&#xD;&#xA;String emailUsuario = apiAccessor.getIdentityAPI().getUserContactData(iniciadorId, false).getEmail();&#xD;&#xA;&#xD;&#xA;if (emailUsuario == null || emailUsuario.isEmpty()) {&#xD;&#xA;&#x9;emailUsuario = &quot;admin&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;String motivo = reunion.motivoReunion ?: &quot;No especificado&quot;;&#xD;&#xA;String grupos = reunion.gruposReunir ?: &quot;Ninguno&quot;;&#xD;&#xA;String medico = reunion.medicoSolicitante ?: &quot;No especificado&quot;;&#xD;&#xA;String estado = reunion.estadoReunion ?: &quot;No definido&quot;;&#xD;&#xA;&#xD;&#xA;String descripcion = &quot;Motivo de la reunión: &quot; + motivo +&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; &quot; | Grupos a reunir: &quot; + grupos +&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; &quot; | Médico solicitante: &quot; + medico +&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; &quot; | Estado de la reunión: &quot; + estado;&#xD;&#xA;descripcion = descripcion.replace(&quot;'&quot;, &quot;''&quot;);&#xD;&#xA;&#xD;&#xA;String sala = &quot;&quot;;&#xD;&#xA;&#xD;&#xA;if (reunion.tipoReunion == &quot;presencial&quot;) {&#xD;&#xA;&#x9;sala = reunion.salaReunion?.toString() ?: &quot;Sala no asignada&quot;;&#xD;&#xA;} else {&#xD;&#xA;&#x9;sala = &quot;Online&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;String fecha = reunion.fechaHoraAsignada?.toString() ?: &quot;&quot;;&#xD;&#xA;fecha = fecha.replace(&quot;T&quot;, &quot; &quot;);&#xD;&#xA;&#xD;&#xA;if(fecha.length() > 19) { fecha = fecha.substring(0, 19); }&#xD;&#xA;&#xD;&#xA;String buscarIdSQL = &quot;COALESCE((SELECT id FROM res_users WHERE login = '&quot; + emailUsuario + &quot;' LIMIT 1), 2)&quot;;&#xD;&#xA;&#xD;&#xA;String comandoSQL = &quot;INSERT INTO calendar_event (name, start, stop, active, privacy, show_as, user_id, create_uid, write_uid, location) &quot; +&#xD;&#xA;                    &quot;VALUES ('&quot; + titulo + &quot;', '&quot; + fecha + &quot;', '&quot; + fecha + &quot;', true, 'public', 'busy', &quot; + &#xD;&#xA;                    buscarIdSQL + &quot;, &quot; + buscarIdSQL + &quot;, &quot; + buscarIdSQL + &quot;, '&quot; + sala + &quot;');&quot;;&#xD;&#xA;return comandoSQL;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JEpZQDprEfGxrNcWTsCkrw" name="reunion" dataType="_2eLOhDiyEfGTKpeDLd0APg" className="com.company.model.Reunion"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_JEpZQTprEfGxrNcWTsCkrw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_JEpZQjprEfGxrNcWTsCkrw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_d6gEGDo6EfGcXPhadnzltw" key="username">
                 <expression xmi:type="expression:Expression" xmi:id="_d6gEGTo6EfGcXPhadnzltw" name="odoo" content="odoo" returnTypeFixed="true"/>
@@ -198,7 +216,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_d6gEHTo6EfGcXPhadnzltw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_d6gEHjo6EfGcXPhadnzltw" key="outputType">
-                <expression xmi:type="expression:Expression" xmi:id="_d6gEHzo6EfGcXPhadnzltw" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_d6gEHzo6EfGcXPhadnzltw" name="outputType" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_d6gEIDo6EfGcXPhadnzltw" key="wizardMode">
                 <expression xmi:type="expression:Expression" xmi:id="_d6gEITo6EfGcXPhadnzltw" name="true" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -210,34 +228,6 @@
                 <referencedElements xmi:type="definition:Output" xmi:id="_d6gEJTo6EfGcXPhadnzltw" name="resultset" type="java.sql.ResultSet"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_d6gEJjo6EfGcXPhadnzltw" type="ASSIGNMENT"/>
-            </outputs>
-            <outputs xmi:type="expression:Operation" xmi:id="_d6gEJzo6EfGcXPhadnzltw">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_d6gEKDo6EfGcXPhadnzltw"/>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_d6gEKTo6EfGcXPhadnzltw" name="singleResult" content="singleResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
-                <referencedElements xmi:type="definition:Output" xmi:id="_d6gEKjo6EfGcXPhadnzltw" name="singleResult" type="java.lang.Object"/>
-              </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_d6gEKzo6EfGcXPhadnzltw" type="ASSIGNMENT"/>
-            </outputs>
-            <outputs xmi:type="expression:Operation" xmi:id="_d6gELDo6EfGcXPhadnzltw">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_d6gELTo6EfGcXPhadnzltw"/>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_d6gELjo6EfGcXPhadnzltw" name="oneRowNColResult" content="oneRowNColResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
-                <referencedElements xmi:type="definition:Output" xmi:id="_d6gELzo6EfGcXPhadnzltw" name="oneRowNColResult" type="java.util.List"/>
-              </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_d6gEMDo6EfGcXPhadnzltw" type="ASSIGNMENT"/>
-            </outputs>
-            <outputs xmi:type="expression:Operation" xmi:id="_d6gEMTo6EfGcXPhadnzltw">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_d6gEMjo6EfGcXPhadnzltw"/>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_d6gEMzo6EfGcXPhadnzltw" name="nRowOneColResult" content="nRowOneColResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
-                <referencedElements xmi:type="definition:Output" xmi:id="_d6gENDo6EfGcXPhadnzltw" name="nRowOneColResult" type="java.util.List"/>
-              </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_d6gENTo6EfGcXPhadnzltw" type="ASSIGNMENT"/>
-            </outputs>
-            <outputs xmi:type="expression:Operation" xmi:id="_d6gENjo6EfGcXPhadnzltw">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_d6gENzo6EfGcXPhadnzltw"/>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_d6gEODo6EfGcXPhadnzltw" name="tableResult" content="tableResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
-                <referencedElements xmi:type="definition:Output" xmi:id="_d6gEOTo6EfGcXPhadnzltw" name="tableResult" type="java.util.List"/>
-              </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_d6gEOjo6EfGcXPhadnzltw" type="ASSIGNMENT"/>
             </outputs>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_BFdA1Do5EfGcXPhadnzltw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -428,7 +418,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_BFdA2To5EfGcXPhadnzltw" type="3027" element="_BFdA0Do5EfGcXPhadnzltw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_BFdA2zo5EfGcXPhadnzltw" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BFdA2jo5EfGcXPhadnzltw" x="749" y="59" width="165" height="80"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BFdA2jo5EfGcXPhadnzltw" x="749" y="59" width="193" height="93"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_P9Q30jizEfGTKpeDLd0APg"/>
