@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "de7623f6-e013-48f1-8261-909965aab57c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776407093476,
+  "lastUpdate" : 1776417203236,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -233,7 +233,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -257,6 +257,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "6865ef89-8401-4316-b760-0f2f7ae136a9",
@@ -346,7 +372,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{reunion.gruposReunir}}"
+                          "value" : "{{reunion.gruposReunir.replace('[','').replace(']','').replaceAll('\"','')}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -355,6 +381,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "ffd934a5-e411-4630-a5e3-16603088455f",
@@ -665,7 +703,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Archivo Reunion"
+                          "value" : "Archivo Reunión"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -674,6 +712,10 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "52b2a171-ed2b-4025-8014-dbec4d2f370a",
@@ -762,7 +804,7 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Browse to update the file..."
+                          "value" : "Adjunte la presentación que utilizará en la reunión"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -779,6 +821,13 @@
                         "url" : {
                           "type" : "constant",
                           "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
                         }
                       },
                       "reference" : "ae256dd8-da9c-451a-9f2a-a715cd3e216b",
@@ -845,7 +894,33 @@
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : true
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "debounce" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
                   }
                 },
                 "reference" : "ee2cf399-8d1a-4703-9544-04892f86fde3",

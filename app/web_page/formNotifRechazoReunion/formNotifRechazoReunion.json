@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "a365004d-13f2-48b2-b9c8-d6071a27220a",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776369211824,
+  "lastUpdate" : 1776417823269,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -372,7 +372,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{reunion.gruposReunir}}"
+                          "value" : "{{reunion.gruposReunir.replace('[','').replace(']','').replaceAll('\"','')}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -381,6 +381,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "40e68846-6ee5-427b-92b3-28ae5f423b17",
@@ -664,7 +676,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Aceptar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -710,6 +722,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "02114e0b-5520-4116-a335-76f82702c6a3",
