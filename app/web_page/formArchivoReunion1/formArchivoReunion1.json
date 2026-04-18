@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "de7623f6-e013-48f1-8261-909965aab57c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776417203236,
+  "lastUpdate" : 1776509529448,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -116,7 +116,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "457a51ed-ef36-4a8e-8041-5f9450b11604",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -651,6 +660,80 @@
             ],
             [
               {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "¿Desea adjuntar algún archivo para la reunión?"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "inline" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "availableValues" : {
+                    "type" : "constant",
+                    "value" : [
+                      "sí",
+                      "no"
+                    ]
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "selectedValue" : {
+                    "type" : "variable",
+                    "value" : "adjuntar_archivos"
+                  }
+                },
+                "reference" : "30da8e1c-8c5b-4679-a550-7ccb72aee979",
+                "hasValidationError" : false,
+                "id" : "pbRadioButtons"
+              }
+            ],
+            [
+              {
                 "type" : "container",
                 "dimension" : {
                   "md" : 12,
@@ -663,8 +746,8 @@
                     "type" : "variable"
                   },
                   "hidden" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "adjuntar_archivos!= \"sí\""
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -1102,20 +1185,31 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.reunion && $data.context ){",
-        "\treturn {",
-        "\t\t//map reunion variable to expected task contract input",
-        "\t\treunionInput: {",
-        "\t\t\ttitulo: $data.reunion.titulo !== undefined ? $data.reunion.titulo : null",
-        "\t\t},",
-        "\t\tarchivoReunionDocumentInput: {",
-        "\t\t\tid: $data.context.archivoReunion_ref && $data.context.archivoReunion_ref.id ? $data.context.archivoReunion_ref.id.toString() : null,",
-        "\t\t\tfilename: $data.context.archivoReunion_ref.newValue && $data.context.archivoReunion_ref.newValue.filename ? $data.context.archivoReunion_ref.newValue.filename : null,",
-        "\t\t\ttempPath: $data.context.archivoReunion_ref.newValue && $data.context.archivoReunion_ref.newValue.tempPath ? $data.context.archivoReunion_ref.newValue.tempPath : null,",
-        "\t\t\tcontentType: $data.context.archivoReunion_ref.newValue && $data.context.archivoReunion_ref.newValue.contentType ? $data.context.archivoReunion_ref.newValue.contentType : null",
-        "\t\t},",
-        "\t\tcomentariosInput: $data.formInput.comentariosInput",
-        "\t}",
+        "if ($data.reunion && $data.context) {",
+        "",
+        "    var result = {",
+        "        reunionInput: {",
+        "            titulo: $data.reunion.titulo !== undefined ? $data.reunion.titulo : null",
+        "        },",
+        "        comentariosInput: $data.formInput.comentariosInput,",
+        "        archivoReunionDocumentInput:null",
+        "    };",
+        "",
+        "    if ($data.context.archivoReunion_ref ",
+        "        && $data.context.archivoReunion_ref.newValue ",
+        "        && $data.context.archivoReunion_ref.newValue.tempPath) {",
+        "",
+        "        result.archivoReunionDocumentInput = {",
+        "            id: $data.context.archivoReunion_ref.id ",
+        "                ? $data.context.archivoReunion_ref.id.toString() ",
+        "                : null,",
+        "            filename: $data.context.archivoReunion_ref.newValue.filename || null,",
+        "            tempPath: $data.context.archivoReunion_ref.newValue.tempPath || null,",
+        "            contentType: $data.context.archivoReunion_ref.newValue.contentType || null",
+        "        };",
+        "    }",
+        "",
+        "    return result;",
         "}"
       ],
       "exposed" : false
@@ -1138,6 +1232,13 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "adjuntar_archivos" : {
+      "type" : "constant",
+      "value" : [
+        "\"\""
       ],
       "exposed" : false
     }
