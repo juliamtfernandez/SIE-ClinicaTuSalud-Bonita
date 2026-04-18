@@ -89,6 +89,9 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ju0rMTnOEfGwG6KO0GtnLA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ju0rMznOEfGwG6KO0GtnLA" name="" content="" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_0-t40DtGEfGpjoB73YGPiw" name="Cópia de " text="Un médico solicita una reunión"/>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_I_ii0DtHEfGpjoB73YGPiw" name="Cópia de Cópia de Cópia de Cópia de Cópia de " text="Se notifica el rechazo de la reunión por parte del director, y el motivo de la misma"/>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_ORe9kDtHEfGpjoB73YGPiw" name="Cópia de Cópia de Cópia de Cópia de Cópia de Cópia de " text="Se adjunta algún archivo a la reunión en caso de ser necesario"/>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_6e88IDiyEfGTKpeDLd0APg" name="Director" actor="_zte2EDi3EfGTKpeDLd0APg">
         <elements xmi:type="process:Task" xmi:id="_2eLOVziyEfGTKpeDLd0APg" name="Aceptar Solicitud" outgoing="_7to70Di9EfGTKpeDLd0APg" incoming="_2eLOaDiyEfGTKpeDLd0APg" overrideActorsOfTheLane="false">
@@ -140,6 +143,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_6uE8QDi9EfGTKpeDLd0APg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_6uE8Qji9EfGTKpeDLd0APg" name="" content="" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_7KI5QDtGEfGpjoB73YGPiw" name="Cópia de Cópia de " text="El director acepta o rechaza la reunión"/>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_P9Q30DizEfGTKpeDLd0APg" name="Admistrativo" actor="_2Y2eEDjhEfGjc_2xxDd5Ug">
         <elements xmi:type="process:Task" xmi:id="__p9ncDi9EfGTKpeDLd0APg" name="Asignación fecha" outgoing="_Got3sTnOEfGwG6KO0GtnLA _zp4FIDo7EfGprIkkbMK1Bw" incoming="__HcJMTi9EfGTKpeDLd0APg" overrideActorsOfTheLane="false">
@@ -236,6 +240,8 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_BFdA2Do5EfGcXPhadnzltw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_BFdA1zo5EfGcXPhadnzltw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_-eQ8cDtGEfGpjoB73YGPiw" name="Cópia de Cópia de Cópia de " text="Si es aceptada, administración le establece una fecha y una sala de reunión, en caso de que sea presencial"/>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_FvyCQDtHEfGpjoB73YGPiw" name="Cópia de Cópia de Cópia de Cópia de " text="Insertamos la fecha en el calendario de Odoo"/>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_4U1pcDi8EfGTKpeDLd0APg" name="reunion" dataType="_2eLOhDiyEfGTKpeDLd0APg" className="com.company.model.Reunion">
         <defaultValue xmi:type="expression:Expression" xmi:id="_ZQAtaTjmEfGjc_2xxDd5Ug" name="initReunion()" content="def reunionVar = new com.company.model.Reunion()&#xD;&#xA;reunionVar.titulo = reunionInput?.titulo&#xD;&#xA;reunionVar.medicoSolicitante = reunionInput?.medicoSolicitante&#xD;&#xA;reunionVar.gruposReunir = reunionInput?.gruposReunir&#xD;&#xA;reunionVar.tipoReunion = reunionInput?.tipoReunion&#xD;&#xA;reunionVar.motivoReunion = reunionInput?.motivoReunion&#xD;&#xA;return reunionVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Reunion">
@@ -380,14 +386,35 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_ju0rNjnOEfGwG6KO0GtnLA" type="5025">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_ju0rNznOEfGwG6KO0GtnLA" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ju0rNTnOEfGwG6KO0GtnLA" x="708" y="206"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ju0rNTnOEfGwG6KO0GtnLA" x="1046" y="208"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_0-uf4DtGEfGpjoB73YGPiw" type="3015" element="_0-t40DtGEfGpjoB73YGPiw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_0-uf4TtGEfGpjoB73YGPiw" type="5010" element="_0-t40DtGEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_0-uf4jtGEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_0-uf4ztGEfGpjoB73YGPiw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_0-uf5DtGEfGpjoB73YGPiw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0-uf5TtGEfGpjoB73YGPiw" x="110" y="114" width="178" height="73"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_I_ii0TtHEfGpjoB73YGPiw" type="3015" element="_I_ii0DtHEfGpjoB73YGPiw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_I_ii0jtHEfGpjoB73YGPiw" type="5010" element="_I_ii0DtHEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_I_ii0ztHEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_I_ii1DtHEfGpjoB73YGPiw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_I_ii1TtHEfGpjoB73YGPiw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I_ii1jtHEfGpjoB73YGPiw" x="782" y="38" width="337" height="90"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ORe9kTtHEfGpjoB73YGPiw" type="3015" element="_ORe9kDtHEfGpjoB73YGPiw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_ORe9kjtHEfGpjoB73YGPiw" type="5010" element="_ORe9kDtHEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_ORe9kztHEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_ORe9lDtHEfGpjoB73YGPiw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_ORe9lTtHEfGpjoB73YGPiw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ORe9ljtHEfGpjoB73YGPiw" x="614" y="234" width="337" height="90"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_2eL1bjiyEfGTKpeDLd0APg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_2eL1bziyEfGTKpeDLd0APg" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_2eL1cDiyEfGTKpeDLd0APg"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_2eL1cTiyEfGTKpeDLd0APg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2eL1cjiyEfGTKpeDLd0APg" x="53" y="10" width="1292" height="310"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2eL1cjiyEfGTKpeDLd0APg" x="53" y="10" width="1292" height="379"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_6e-xUDiyEfGTKpeDLd0APg" type="3007" element="_6e88IDiyEfGTKpeDLd0APg">
           <children xmi:type="notation:DecorationNode" xmi:id="_6e-xVTiyEfGTKpeDLd0APg" type="5007"/>
@@ -402,30 +429,51 @@
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6uGKYTi9EfGTKpeDLd0APg" x="331" y="132"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_7KI5QTtGEfGpjoB73YGPiw" type="3015" element="_7KI5QDtGEfGpjoB73YGPiw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_7KI5QjtGEfGpjoB73YGPiw" type="5010" element="_7KI5QDtGEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_7KI5QztGEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_7KI5RDtGEfGpjoB73YGPiw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_7KI5RTtGEfGpjoB73YGPiw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7KI5RjtGEfGpjoB73YGPiw" x="87" y="164" width="178" height="73"/>
+            </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_6e-xUTiyEfGTKpeDLd0APg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_6e-xUjiyEfGTKpeDLd0APg" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_6e-xUziyEfGTKpeDLd0APg"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_6e-xVziyEfGTKpeDLd0APg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6e-xVDiyEfGTKpeDLd0APg" x="53" y="250" width="1292" height="305"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6e-xVDiyEfGTKpeDLd0APg" x="53" y="310" width="1292" height="335"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_P9Q30TizEfGTKpeDLd0APg" type="3007" element="_P9Q30DizEfGTKpeDLd0APg">
           <children xmi:type="notation:DecorationNode" xmi:id="_P9Q31jizEfGTKpeDLd0APg" type="5007"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_P9Q31zizEfGTKpeDLd0APg" type="7002">
             <children xmi:type="notation:Shape" xmi:id="__p-1nDi9EfGTKpeDLd0APg" type="3005" element="__p9ncDi9EfGTKpeDLd0APg" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="__p-1nji9EfGTKpeDLd0APg" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__p-1nTi9EfGTKpeDLd0APg" x="306" y="69" width="141" height="70"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__p-1nTi9EfGTKpeDLd0APg" x="348" y="27" width="141" height="70"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_BFdA2To5EfGcXPhadnzltw" type="3027" element="_BFdA0Do5EfGcXPhadnzltw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_BFdA2zo5EfGcXPhadnzltw" type="5017"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BFdA2jo5EfGcXPhadnzltw" x="721" y="57" width="193" height="93"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-eRjgDtGEfGpjoB73YGPiw" type="3015" element="_-eQ8cDtGEfGpjoB73YGPiw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_-eRjgTtGEfGpjoB73YGPiw" type="5010" element="_-eQ8cDtGEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_-eRjgjtGEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_-eRjgztGEfGpjoB73YGPiw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_-eRjhDtGEfGpjoB73YGPiw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-eRjhTtGEfGpjoB73YGPiw" x="302" y="117" width="178" height="145"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_FvyCQTtHEfGpjoB73YGPiw" type="3015" element="_FvyCQDtHEfGpjoB73YGPiw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_FvyCQjtHEfGpjoB73YGPiw" type="5010" element="_FvyCQDtHEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_FvyCQztHEfGpjoB73YGPiw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_FvyCRDtHEfGpjoB73YGPiw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_FvyCRTtHEfGpjoB73YGPiw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FvyCRjtHEfGpjoB73YGPiw" x="737" y="165" width="178" height="52"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_P9Q30jizEfGTKpeDLd0APg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_P9Q30zizEfGTKpeDLd0APg" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_P9Q31DizEfGTKpeDLd0APg"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_P9Q32DizEfGTKpeDLd0APg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9Q31TizEfGTKpeDLd0APg" x="53" y="483" width="1292" height="208"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9Q31TizEfGTKpeDLd0APg" x="53" y="645" width="1292" height="463"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_2eL1cziyEfGTKpeDLd0APg"/>
