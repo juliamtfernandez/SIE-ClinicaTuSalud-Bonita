@@ -2,6 +2,7 @@
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
     <application token="reuniones" version="1.0" profile="User" homePage="reunion" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
         <displayName>Reuniones</displayName>
+        <description>Reuniones solicitadas</description>
         <applicationPages>
             <applicationPage customPage="custompage_reuniones" token="reunion"/>
         </applicationPages>

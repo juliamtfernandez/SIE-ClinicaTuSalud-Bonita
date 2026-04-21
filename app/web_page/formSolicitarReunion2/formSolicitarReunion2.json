@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "eb0525d0-8c55-4bc0-b162-7c81854df0bd",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776368825297,
+  "lastUpdate" : 1776767058223,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -259,7 +259,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Medico Solicitante"
+                          "value" : "Solicitante"
                         },
                         "placeholder" : {
                           "type" : "constant"

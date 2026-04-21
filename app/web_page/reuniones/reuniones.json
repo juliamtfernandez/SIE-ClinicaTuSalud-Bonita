@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "042a0bbb-f8ed-4d5a-b48a-9af5c4a615a2",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776420741855,
+  "lastUpdate" : 1776767922722,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -123,7 +123,7 @@
                       },
                       "hidden" : {
                         "type" : "expression",
-                        "value" : "!userEsMedico"
+                        "value" : "!userReunion"
                       },
                       "allowHTML" : {
                         "type" : "constant",
@@ -196,13 +196,10 @@
                         "type" : "constant",
                         "value" : [
                           "Titulo",
-                          "Medico Solicitante",
                           "Grupos Reunir",
                           "Fecha Hora Asignada",
                           "Tipo Reunion",
-                          "Sala Reunion",
-                          "Estado Reunion",
-                          "Motivo Reunion"
+                          "Estado Reunion"
                         ]
                       },
                       "allowHtml" : {
@@ -236,13 +233,10 @@
                         "type" : "constant",
                         "value" : [
                           "titulo",
-                          "medicoSolicitante",
                           "gruposReunir",
-                          "fechaHoraAsignada",
+                          "fechaHoraAsignada | uiDate: 'dd/MM/yyyy HH:mm'",
                           "tipoReunion",
-                          "salaReunion",
-                          "estadoReunion",
-                          "motivoReunion"
+                          "estadoReunion"
                         ]
                       },
                       "dimension" : {
@@ -435,7 +429,7 @@
                             },
                             "label" : {
                               "type" : "interpolation",
-                              "value" : "Medico Solicitante"
+                              "value" : "Solicitante"
                             },
                             "placeholder" : {
                               "type" : "constant"
@@ -455,6 +449,32 @@
                             "required" : {
                               "type" : "constant",
                               "value" : true
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "minLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "maxLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "debounce" : {
+                              "type" : "constant",
+                              "value" : 0
+                            },
+                            "min" : {
+                              "type" : "constant"
+                            },
+                            "max" : {
+                              "type" : "constant"
+                            },
+                            "step" : {
+                              "type" : "constant",
+                              "value" : 1
                             }
                           },
                           "reference" : "2460f26c-0060-4cb2-b4dd-bc9b8431db43",
@@ -1070,6 +1090,19 @@
       "value" : [
         "const rolPsi = $data.roles.find(rol => rol.name === \"Psicólogo\");\r",
         "return rolPsi ? rolPsi.id : null;"
+      ],
+      "exposed" : false
+    },
+    "userReunion" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.membresiasUser.some(",
+        "  membresia => ",
+        "  membresia.role_id === $data.idRolMedico ||",
+        "  membresia.role_id === $data.idRolEnfermero ||",
+        "  membresia.role_id === $data.idRolFisio ||",
+        "  membresia.role_id === $data.idRolPsi",
+        ");"
       ],
       "exposed" : false
     }

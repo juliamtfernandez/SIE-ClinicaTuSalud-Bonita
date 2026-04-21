@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "404635b0-f567-4783-94c9-dcfc32037c2c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776332272148,
+  "lastUpdate" : 1776767056192,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -290,7 +290,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Medico Solicitante"
+                          "value" : "Solicitante"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -303,6 +303,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "aa019ce4-438a-4efa-b104-62cb096506c6",
