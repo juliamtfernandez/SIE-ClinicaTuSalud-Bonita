@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "09bf3942-5039-49bc-9805-5c746c3ab34b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776255141905,
+  "lastUpdate" : 1777365593679,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -903,6 +903,7 @@
       "value" : [
         "var citaInput = $data.formInput.citaInput",
         "citaInput.nombrePaciente = $data.nombre_apellido",
+        "citaInput.dniPaciente = $data.dni",
         "",
         "return {",
         "\tcitaInput: citaInput",

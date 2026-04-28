@@ -45,7 +45,7 @@
         </customUserInfoValue>
         <customUserInfoValue>
           <name>dni</name>
-          <value></value>
+          <value>12345678L</value>
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
