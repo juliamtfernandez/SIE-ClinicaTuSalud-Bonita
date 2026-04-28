@@ -35,7 +35,7 @@
       <lastName>P&#xe9;rez</lastName>
       <personalData/>
       <professionalData>
-        <email>lauraperez@</email>
+        <email>laura.perez@cts.es</email>
       </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
@@ -92,7 +92,9 @@
       <firstName>Mar&#xed;a</firstName>
       <lastName>&#xc1;lvarez</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>maria.alvarez@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -109,7 +111,9 @@
       <firstName>Julian</firstName>
       <lastName>Romero</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>julian.romero@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -126,7 +130,9 @@
       <firstName>Loreto</firstName>
       <lastName>Ferrera</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>loreto.ferrera@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -140,10 +146,12 @@
       </customUserInfoValues>
     </user>
     <user userName="rocio.martinez">
-      <firstName>Rocio</firstName>
+      <firstName>Roc&#xed;o</firstName>
       <lastName>Mart&#xed;nez</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>rocio@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -160,7 +168,9 @@
       <firstName>Daniel</firstName>
       <lastName>Ruiz</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>daniel.ruiz@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -177,7 +187,9 @@
       <firstName>Carmen</firstName>
       <lastName>L&#xf3;pez</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>carmen.lopez@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -194,7 +206,9 @@
       <firstName>Javier</firstName>
       <lastName>Torres</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>javier.torres@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -211,7 +225,9 @@
       <firstName>Paula</firstName>
       <lastName>S&#xe1;nchez</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>paula.sanchez@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -228,7 +244,9 @@
       <firstName>Carlos</firstName>
       <lastName>Ruiz</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>carlos.ruiz@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -245,7 +263,9 @@
       <firstName>Ana</firstName>
       <lastName>Castillo</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>ana.castillo@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -262,7 +282,9 @@
       <firstName>Elena</firstName>
       <lastName>Torres</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>elena.torres@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -279,7 +301,9 @@
       <firstName>Pablo</firstName>
       <lastName>Navarro</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>pablo.navarro@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -296,7 +320,9 @@
       <firstName>Diego</firstName>
       <lastName>Herrera</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>diego.herrera@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -313,7 +339,9 @@
       <firstName>Marcos</firstName>
       <lastName>Vidal</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>marcos.vidal@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -330,7 +358,9 @@
       <firstName>Claudia</firstName>
       <lastName>Rojas</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>claudia.rojas@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -347,7 +377,9 @@
       <firstName>Natalia</firstName>
       <lastName>Paredes</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>natalia.paredes@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -364,7 +396,9 @@
       <firstName>Jorge</firstName>
       <lastName>Ruiz</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>jorge.ruiz@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -381,7 +415,9 @@
       <firstName>David</firstName>
       <lastName>Castillo</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>david.castillo@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -398,7 +434,9 @@
       <firstName>Nuria</firstName>
       <lastName>Blasco</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>nuria.blasco@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -415,7 +453,9 @@
       <firstName>Mar&#xed;a</firstName>
       <lastName>Flores</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>maria.flores@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -432,7 +472,9 @@
       <firstName>Alba</firstName>
       <lastName>Reyes</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>alba.reyes@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -449,7 +491,9 @@
       <firstName>Bruno</firstName>
       <lastName>Vidal</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>bruno.vidal@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -466,7 +510,9 @@
       <firstName>Eva</firstName>
       <lastName>Navarro</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>eva.navarro@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -483,7 +529,9 @@
       <firstName>Paula</firstName>
       <lastName>Romero</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>paula.romero@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -500,7 +548,9 @@
       <firstName>Juan</firstName>
       <lastName>Herrera</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>juan.herrera@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -517,7 +567,9 @@
       <firstName>Sonia</firstName>
       <lastName>Casado</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>sonia.casado@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -534,7 +586,9 @@
       <firstName>Nuria</firstName>
       <lastName>Rojas</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>nuria.rojas@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -551,7 +605,9 @@
       <firstName>David</firstName>
       <lastName>Reyes</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>david.reyes@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -568,7 +624,9 @@
       <firstName>Paula</firstName>
       <lastName>Torres</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>paula.torres@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -585,7 +643,9 @@
       <firstName>Daniel</firstName>
       <lastName>Herrera</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>daniel.herrera@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -602,7 +662,9 @@
       <firstName>Javier</firstName>
       <lastName>Romero</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>javier.romero@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -619,7 +681,9 @@
       <firstName>Sara</firstName>
       <lastName>Torres</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>sara.torres@cts.es</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -884,7 +948,7 @@
     </membership>
     <membership>
       <userName>nuria.rojas</userName>
-      <roleName>Director</roleName>
+      <roleName>Psic&#xf3;logo</roleName>
       <groupName>Salud Mental</groupName>
       <groupParentPath>/&#xc1;rea Cl&#xed;nica</groupParentPath>
     </membership>
