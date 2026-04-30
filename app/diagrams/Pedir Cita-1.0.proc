@@ -524,7 +524,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_rWT2gh4uEfGURfdQCDIpoA" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_rWT2gx4uEfGURfdQCDIpoA"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_rWT2hx4uEfGURfdQCDIpoA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rWT2hB4uEfGURfdQCDIpoA" x="28" y="865" width="1531" height="318"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rWT2hB4uEfGURfdQCDIpoA" x="28" y="755" width="1531" height="296"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_21fxaB0yEfG24oyYZo8hMw"/>

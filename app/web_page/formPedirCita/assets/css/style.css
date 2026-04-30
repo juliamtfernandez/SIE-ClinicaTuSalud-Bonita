@@ -57,6 +57,44 @@ input[type='url'].ng-invalid.ng-dirty {
     display: block;
 }
 
+.titulo-pedir-cita {
+    /* --- COLOR A NEGRO --- */
+    color: #000000 !important; 
+    
+    /* --- CENTRADO --- */
+    text-align: center !important; /* Centra el texto dentro de su bloque */
+    width: 100% !important;        /* Obliga al bloque a ocupar todo el ancho */
+    display: block !important;    /* Asegura que se comporte como un bloque completo */
+
+    /* Mantenemos tu estilo visual (ajustado para centrar) */
+    font-size: 35px !important;
+    font-weight: bold !important;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    letter-spacing: 1px !important;
+    margin-top: 20px !important; /* Un poco más de espacio arriba */
+    margin-bottom: 30px !important; /* Un poco más de espacio abajo */
+    
+    /* Si quieres mantener la línea azul, ahora debe estar centrada: */
+    border-bottom: 2px solid #3498db !important; 
+    padding-bottom: 10px !important;
+    max-width: 300px; /* Limita el ancho de la línea para que no cruce toda la pantalla */
+    margin-left: auto !important; /* Centra el bloque de la línea */
+    margin-right: auto !important;
+}
+
+/* Usamos la clase logo-pequeno para controlar el tamaño exacto */
+.logo-pequeno img {
+    width: 175px !important;  /* Ajusta este número (80px, 100px, 120px) hasta que te guste */
+    height: auto !important;   /* Para que no se deforme */
+    
+}
+.logo-pequeno {
+    text-align: right !important;
+}
+
+
+
+
 @media screen and (max-width: 767px) {
     .ngdialog.ngdialog-theme-default .ngdialog-content {
         width: 75%;
