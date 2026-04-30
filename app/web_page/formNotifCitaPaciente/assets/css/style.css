@@ -65,6 +65,7 @@ input[type='url'].ng-invalid.ng-dirty {
     font-weight: bold;
     color: #c0392b; 
     cursor: pointer;
+    margin-left: 20px;
 }
 
 
@@ -84,6 +85,16 @@ input[type='url'].ng-invalid.ng-dirty {
 .alerta-rechazo strong, .alerta-rechazo b {
     color: #a8071a;
 }
+
+.bordeRedondeado {
+  border: 1px solid #8fb8d8; /* azul un poco más oscuro */
+  border-radius: 8px;
+  margin: 2%;
+  width: 95%;
+  padding: 12px;
+  background-color: #f5faff;
+}
+
 
 @media screen and (max-width: 767px) {
     .ngdialog.ngdialog-theme-default .ngdialog-content {

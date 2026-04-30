@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "53ca6b0e-3eda-48ea-b3b9-c9f1a943b886",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776265587238,
+  "lastUpdate" : 1777565974876,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -140,7 +140,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "9989cdb6-c170-436a-89e9-f82c7f1c7b69",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -218,7 +227,7 @@
                   },
                   "cssClasses" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : "bordeRedondeado"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -721,7 +730,36 @@
                       "id" : "pbInput",
                       "description" : ""
                     }
-                  ],
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "7cb71db3-405d-42e5-ba53-7fabb0546535",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
                   [
                     {
                       "type" : "component",
@@ -729,7 +767,7 @@
                         "xs" : 12,
                         "sm" : 12,
                         "md" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {

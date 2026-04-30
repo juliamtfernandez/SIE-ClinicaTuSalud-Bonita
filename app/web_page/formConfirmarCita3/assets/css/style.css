@@ -48,6 +48,14 @@ input[type='url'].ng-invalid.ng-dirty {
     padding-top: 30px;
 }
 
+.bordeRedondeado {
+  border: 1px solid #8fb8d8; /* azul un poco más oscuro */
+  border-radius: 8px;
+  margin: 2%;
+  width: 95%;
+  padding: 12px;
+  background-color: #f5faff;
+}
 @media screen and (max-width: 767px) {
     .ngdialog.ngdialog-theme-default .ngdialog-content {
         width: 75%;
