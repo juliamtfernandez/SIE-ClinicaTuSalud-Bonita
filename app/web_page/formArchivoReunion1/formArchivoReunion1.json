@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "de7623f6-e013-48f1-8261-909965aab57c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777548150750,
+  "lastUpdate" : 1777557871574,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -163,7 +163,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Reunion"
+                    "value" : "Reunión"
                   },
                   "alignment" : {
                     "type" : "constant",

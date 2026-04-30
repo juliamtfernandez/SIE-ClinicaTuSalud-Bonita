@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "404635b0-f567-4783-94c9-dcfc32037c2c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777547674107,
+  "lastUpdate" : 1777557800874,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -30,7 +30,7 @@
               "propertyValues" : {
                 "hidden" : {
                   "type" : "constant",
-                  "value" : true
+                  "value" : false
                 },
                 "level" : {
                   "type" : "constant",
@@ -83,7 +83,7 @@
                 },
                 "hidden" : {
                   "type" : "constant",
-                  "value" : true
+                  "value" : false
                 },
                 "cssClasses" : {
                   "type" : "constant",
@@ -179,7 +179,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{ task.displayName }}"
+                    "value" : "Reunión"
                   },
                   "alignment" : {
                     "type" : "constant",

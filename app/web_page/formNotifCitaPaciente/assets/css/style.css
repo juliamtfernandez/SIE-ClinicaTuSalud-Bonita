@@ -48,52 +48,78 @@ input[type='url'].ng-invalid.ng-dirty {
     padding-top: 30px;
 }
 
-.texto-grande{
-    font-size: 1.3em;
+.etiqueta-estandar {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
     font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
 }
 
-.checkbox-gigante input[type="checkbox"] {
-    transform: scale(2);
-    margin-right: 15px;
-    margin-top: 10px;
-    cursor: pointer;
+.titulo-pedir-cita {
+    /* --- COLOR A NEGRO --- */
+    color: #000000 !important; 
+    
+    /* --- CENTRADO --- */
+    text-align: center !important; /* Centra el texto dentro de su bloque */
+    width: 100% !important;        /* Obliga al bloque a ocupar todo el ancho */
+    display: block !important;    /* Asegura que se comporte como un bloque completo */
+
+    /* Mantenemos tu estilo visual (ajustado para centrar) */
+    font-size: 35px !important;
+    font-weight: bold !important;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    letter-spacing: 1px !important;
+    margin-top: 20px !important; /* Un poco más de espacio arriba */
+    margin-bottom: 30px !important; /* Un poco más de espacio abajo */
+    
+    /* Si quieres mantener la línea azul, ahora debe estar centrada: */
+    border-bottom: 2px solid #3498db !important; 
+    padding-bottom: 10px !important;
+    max-width: 300px; /* Limita el ancho de la línea para que no cruce toda la pantalla */
+    margin-left: auto !important; /* Centra el bloque de la línea */
+    margin-right: auto !important;
 }
 
-.checkbox-gigante label {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #c0392b; 
-    cursor: pointer;
-    margin-left: 20px;
+/* Usamos la clase logo-pequeno para controlar el tamaño exacto */
+.logo-pequeno img {
+    width: 175px !important;  /* Ajusta este número (80px, 100px, 120px) hasta que te guste */
+    height: auto !important;   /* Para que no se deforme */
+    
+}
+.logo-pequeno {
+    text-align: right !important;
+}
+
+.logo-derecha {
+    width: 100% !important;
+    text-align: right !important;
+    margin-top: -100px !important;
+    margin-bottom: 10px !important;
+}
+
+.logo-derecha img {
+    width: 175px !important;
+    height: auto !important;
+    display: inline-block !important;
+}
+
+/* Responsive para móvil */
+@media (max-width: 600px) {
+    .logo-derecha {
+        text-align: center !important;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .logo-derecha img {
+        width: 140px !important;
+        max-width: 70vw !important;
+    }
 }
 
 
-.alerta-rechazo {
-    background-color: #fff1f0; 
-    color: #cf1322;
-    border: 1px solid #ffa39e;
-    border-left: 6px solid #f5222d;
-    padding: 15px 20px;
-    border-radius: 6px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 1.1em;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.alerta-rechazo strong, .alerta-rechazo b {
-    color: #a8071a;
-}
-
-.bordeRedondeado {
-  border: 1px solid #8fb8d8; /* azul un poco más oscuro */
-  border-radius: 8px;
-  margin: 2%;
-  width: 95%;
-  padding: 12px;
-  background-color: #f5faff;
-}
 
 
 @media screen and (max-width: 767px) {
