@@ -92,6 +92,33 @@ input[type='url'].ng-invalid.ng-dirty {
     text-align: right !important;
 }
 
+.logo-derecha {
+    width: 100% !important;
+    text-align: right !important;
+    margin-top: -100px !important;
+    margin-bottom: 10px !important;
+}
+
+.logo-derecha img {
+    width: 175px !important;
+    height: auto !important;
+    display: inline-block !important;
+}
+
+/* Responsive para móvil */
+@media (max-width: 600px) {
+    .logo-derecha {
+        text-align: center !important;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .logo-derecha img {
+        width: 140px !important;
+        max-width: 70vw !important;
+    }
+}
+
 
 
 

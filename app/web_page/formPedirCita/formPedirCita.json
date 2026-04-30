@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "09bf3942-5039-49bc-9805-5c746c3ab34b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777542800777,
+  "lastUpdate" : 1777547370341,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -85,13 +85,13 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 3,
+                  "md" : 6,
                   "lg" : 6
                 },
                 "propertyValues" : {
                   "cssClasses" : {
                     "type" : "constant",
-                    "value" : "logo-pequeno"
+                    "value" : "logo-pequeno, logo-derecha"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -1012,7 +1012,7 @@
   },
   "assets" : [
     {
-      "id" : "a0de2925-70d4-40a0-8f0c-521adeb8bc84",
+      "id" : "49252b34-836d-4a66-bff4-7b0ed9df68b7",
       "name" : "logoTuSalud.png",
       "type" : "img",
       "order" : 1,

@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "de7623f6-e013-48f1-8261-909965aab57c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776767049858,
+  "lastUpdate" : 1777548150750,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -143,10 +143,10 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "md" : 6,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "hidden" : {
@@ -159,7 +159,7 @@
                   },
                   "cssClasses" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : "titulo-pedir-cita"
                   },
                   "text" : {
                     "type" : "interpolation",
@@ -172,12 +172,52 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "5e5ee97b-cad3-4afb-aa7b-fabbf78e5e3e",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "logo-pequeno, logo-derecha"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "srcType" : {
+                    "type" : "constant",
+                    "value" : "URL"
+                  },
+                  "url" : {
+                    "type" : "expression",
+                    "value" : "'assets/img/logoTuSalud.png'"
+                  },
+                  "assetName" : {
+                    "type" : "constant"
+                  },
+                  "alt" : {
+                    "type" : "interpolation"
+                  }
+                },
+                "reference" : "d5bb310a-8c19-4987-a880-6d4ac3265b1c",
+                "hasValidationError" : false,
+                "id" : "pbImage"
               }
             ],
             [
@@ -1261,6 +1301,13 @@
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "ee6a080d-964f-4049-9831-6843a196dc66",
+      "name" : "logoTuSalud.png",
+      "type" : "img",
+      "order" : 1,
       "external" : false
     },
     {
