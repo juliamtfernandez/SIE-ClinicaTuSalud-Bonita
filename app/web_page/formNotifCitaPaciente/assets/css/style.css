@@ -128,6 +128,20 @@ input[type='url'].ng-invalid.ng-dirty {
   background-color: #f5faff;
 }
 
+.checkbox-gigante label {
+
+    font-size: 1.3em;
+
+    font-weight: bold;
+
+    color: #c0392b; 
+
+    cursor: pointer;
+
+    margin-left: 20px;
+
+}
+
 
 @media screen and (max-width: 767px) {
     .ngdialog.ngdialog-theme-default .ngdialog-content {
