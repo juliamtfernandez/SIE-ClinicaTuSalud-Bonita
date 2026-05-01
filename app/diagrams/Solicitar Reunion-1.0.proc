@@ -466,14 +466,14 @@
               <styles xmi:type="notation:DescriptionStyle" xmi:id="_FvyCQztHEfGpjoB73YGPiw"/>
               <styles xmi:type="notation:FontStyle" xmi:id="_FvyCRDtHEfGpjoB73YGPiw" fontName="Segoe UI"/>
               <styles xmi:type="notation:LineStyle" xmi:id="_FvyCRTtHEfGpjoB73YGPiw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FvyCRjtHEfGpjoB73YGPiw" x="929" y="98" width="178" height="52"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FvyCRjtHEfGpjoB73YGPiw" x="929" y="98" width="240" height="85"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_P9Q30jizEfGTKpeDLd0APg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_P9Q30zizEfGTKpeDLd0APg" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_P9Q31DizEfGTKpeDLd0APg"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_P9Q32DizEfGTKpeDLd0APg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9Q31TizEfGTKpeDLd0APg" x="53" y="667" width="1292" height="216"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9Q31TizEfGTKpeDLd0APg" x="58" y="571" width="1287" height="252"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_2eL1cziyEfGTKpeDLd0APg"/>

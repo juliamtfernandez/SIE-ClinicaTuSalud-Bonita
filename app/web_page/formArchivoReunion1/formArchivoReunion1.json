@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "de7623f6-e013-48f1-8261-909965aab57c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777557871574,
+  "lastUpdate" : 1777627915947,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -1010,7 +1010,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Comentarios Input"
+                    "value" : "Comentarios"
                   },
                   "placeholder" : {
                     "type" : "constant"
